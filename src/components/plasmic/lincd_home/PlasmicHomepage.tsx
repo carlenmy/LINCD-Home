@@ -58,7 +58,7 @@ export type PlasmicHomepage__OverridesType = {
   title?: p.Flex<"div">;
   description?: p.Flex<"div">;
   frame179?: p.Flex<"div">;
-  button?: p.Flex<"div">;
+  button?: p.Flex<"button">;
   frame138?: p.Flex<"div">;
   frame137?: p.Flex<"div">;
   sectionTitle?: p.Flex<"div">;
@@ -185,13 +185,13 @@ export type PlasmicHomepage__OverridesType = {
   sectionTitle5?: p.Flex<"div">;
   sectionDescription16?: p.Flex<"div">;
   button6?: p.Flex<"div">;
-  button7?: p.Flex<"div">;
+  button7?: p.Flex<"button">;
   frame125?: p.Flex<"div">;
   featureInfo?: p.Flex<"div">;
   sectionTitle6?: p.Flex<"div">;
   sectionDescription17?: p.Flex<"div">;
   button8?: p.Flex<"div">;
-  button9?: p.Flex<"div">;
+  button9?: p.Flex<"button">;
   image22?: p.Flex<"div">;
   frame130?: p.Flex<"div">;
   image51?: p.Flex<"div">;
@@ -204,7 +204,7 @@ export type PlasmicHomepage__OverridesType = {
   sectionTitle8?: p.Flex<"div">;
   sectionDescription19?: p.Flex<"div">;
   button10?: p.Flex<"div">;
-  button11?: p.Flex<"div">;
+  button11?: p.Flex<"button">;
   frame144?: p.Flex<"div">;
   cards?: p.Flex<"div">;
   frame98?: p.Flex<"div">;
@@ -339,10 +339,15 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.frame179)}
                 >
-                  <div
+                  <button
                     data-plasmic-name={"button"}
                     data-plasmic-override={overrides.button}
-                    className={classNames(projectcss.all, sty.button)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      sty.button
+                    )}
+                    onClick={"" as const}
                   >
                     <div
                       className={classNames(
@@ -353,7 +358,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       {"Request early access"}
                     </div>
-                  </div>
+                  </button>
                 </p.Stack>
               </p.Stack>
             </div>
@@ -1072,19 +1077,27 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.frame151)}
                 >
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame153"}
-                    data-plasmic-override={overrides.frame153}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame153)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle78"}
-                      data-plasmic-override={overrides.rectangle78}
-                      className={classNames(projectcss.all, sty.rectangle78)}
-                    />
-                  </p.Stack>
+                  {(
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? true
+                      : hasVariant(globalVariants, "screen", "tablet")
+                      ? true
+                      : true
+                  ) ? (
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"frame153"}
+                      data-plasmic-override={overrides.frame153}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.frame153)}
+                    >
+                      <div
+                        data-plasmic-name={"rectangle78"}
+                        data-plasmic-override={overrides.rectangle78}
+                        className={classNames(projectcss.all, sty.rectangle78)}
+                      />
+                    </p.Stack>
+                  ) : null}
 
                   <p.Stack
                     as={"div"}
@@ -1372,19 +1385,23 @@ function PlasmicHomepage__RenderFunc(props: {
                     </p.Stack>
                   </p.Stack>
 
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame157"}
-                    data-plasmic-override={overrides.frame157}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame157)}
-                  >
-                    <div
-                      data-plasmic-name={"rectangle82"}
-                      data-plasmic-override={overrides.rectangle82}
-                      className={classNames(projectcss.all, sty.rectangle82)}
-                    />
-                  </p.Stack>
+                  {(
+                    hasVariant(globalVariants, "screen", "tablet") ? true : true
+                  ) ? (
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"frame157"}
+                      data-plasmic-override={overrides.frame157}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.frame157)}
+                    >
+                      <div
+                        data-plasmic-name={"rectangle82"}
+                        data-plasmic-override={overrides.rectangle82}
+                        className={classNames(projectcss.all, sty.rectangle82)}
+                      />
+                    </p.Stack>
+                  ) : null}
                 </p.Stack>
 
                 <div
@@ -1528,10 +1545,14 @@ function PlasmicHomepage__RenderFunc(props: {
                   data-plasmic-override={overrides.button6}
                   className={classNames(projectcss.all, sty.button6)}
                 >
-                  <div
+                  <button
                     data-plasmic-name={"button7"}
                     data-plasmic-override={overrides.button7}
-                    className={classNames(projectcss.all, sty.button7)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      sty.button7
+                    )}
                   >
                     <div
                       className={classNames(
@@ -1542,7 +1563,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       {"Request early access"}
                     </div>
-                  </div>
+                  </button>
                 </div>
               </p.Stack>
             </p.Stack>
@@ -1592,10 +1613,14 @@ function PlasmicHomepage__RenderFunc(props: {
                   data-plasmic-override={overrides.button8}
                   className={classNames(projectcss.all, sty.button8)}
                 >
-                  <div
+                  <button
                     data-plasmic-name={"button9"}
                     data-plasmic-override={overrides.button9}
-                    className={classNames(projectcss.all, sty.button9)}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      sty.button9
+                    )}
                   >
                     <div
                       className={classNames(
@@ -1606,7 +1631,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     >
                       {"Join the community"}
                     </div>
-                  </div>
+                  </button>
                 </div>
               </p.Stack>
 
@@ -1717,10 +1742,14 @@ function PlasmicHomepage__RenderFunc(props: {
                 data-plasmic-override={overrides.button10}
                 className={classNames(projectcss.all, sty.button10)}
               >
-                <div
+                <button
                   data-plasmic-name={"button11"}
                   data-plasmic-override={overrides.button11}
-                  className={classNames(projectcss.all, sty.button11)}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.button,
+                    sty.button11
+                  )}
                 >
                   <div
                     className={classNames(
@@ -1731,7 +1760,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   >
                     {"Request early access"}
                   </div>
-                </div>
+                </button>
               </div>
 
               <p.Stack
@@ -3011,7 +3040,7 @@ type NodeDefaultElementType = {
   title: "div";
   description: "div";
   frame179: "div";
-  button: "div";
+  button: "button";
   frame138: "div";
   frame137: "div";
   sectionTitle: "div";
@@ -3138,13 +3167,13 @@ type NodeDefaultElementType = {
   sectionTitle5: "div";
   sectionDescription16: "div";
   button6: "div";
-  button7: "div";
+  button7: "button";
   frame125: "div";
   featureInfo: "div";
   sectionTitle6: "div";
   sectionDescription17: "div";
   button8: "div";
-  button9: "div";
+  button9: "button";
   image22: "div";
   frame130: "div";
   image51: "div";
@@ -3157,7 +3186,7 @@ type NodeDefaultElementType = {
   sectionTitle8: "div";
   sectionDescription19: "div";
   button10: "div";
-  button11: "div";
+  button11: "button";
   frame144: "div";
   cards: "div";
   frame98: "div";
