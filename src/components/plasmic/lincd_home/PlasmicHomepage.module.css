@@ -290,27 +290,7 @@
   > img {
   margin-left: 40px;
 }
-.button {
-  background: rgba(135, 202, 161, 1);
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 8px;
-  padding: 20px 24px;
-}
-.text___4N7II {
-  display: block;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0em;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 1);
+.ctaButtonHomePage:global(.__wab_instance) {
   position: relative;
 }
 .frame138 {

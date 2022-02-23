@@ -40,6 +40,33 @@
           "cssFilePath": "plasmic/lincd_home/PlasmicHomepage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "jCiHQkUtwa1",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "vxhLNdYPiZkVHCUwHukgLS",
+          "renderModuleFilePath": "plasmic/lincd_home/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/lincd_home/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "v_1uoljXHS",
+          "name": "CtaButtonHomePage",
+          "type": "managed",
+          "projectId": "vxhLNdYPiZkVHCUwHukgLS",
+          "renderModuleFilePath": "plasmic/lincd_home/PlasmicCtaButtonHomePage.tsx",
+          "importSpec": {
+            "modulePath": "CtaButtonHomePage.tsx"
+          },
+          "cssFilePath": "plasmic/lincd_home/PlasmicCtaButtonHomePage.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -52,6 +79,16 @@
           "id": "qcalXb22SQcF",
           "name": "Icon2Icon",
           "moduleFilePath": "plasmic/lincd_home/icons/PlasmicIcon__Icon2.tsx"
+        },
+        {
+          "id": "dTtTC6zw9_M",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/lincd_home/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "zoW0V_gsSsu",
+          "name": "Icon3Icon",
+          "moduleFilePath": "plasmic/lincd_home/icons/PlasmicIcon__Icon3.tsx"
         }
       ],
       "images": [

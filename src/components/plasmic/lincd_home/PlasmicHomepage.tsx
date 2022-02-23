@@ -30,6 +30,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import CtaButtonHomePage from "../../CtaButtonHomePage"; // plasmic-import: v_1uoljXHS/component
 
 import { useScreenVariants as useScreenVariantsbsAoCHpNAwrkE } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: BSAoCHpNAwrkE/globalVariant
 
@@ -58,7 +59,7 @@ export type PlasmicHomepage__OverridesType = {
   title?: p.Flex<"div">;
   description?: p.Flex<"div">;
   frame179?: p.Flex<"div">;
-  button?: p.Flex<"button">;
+  ctaButtonHomePage?: p.Flex<typeof CtaButtonHomePage>;
   frame138?: p.Flex<"div">;
   frame137?: p.Flex<"div">;
   sectionTitle?: p.Flex<"div">;
@@ -339,26 +340,14 @@ function PlasmicHomepage__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.frame179)}
                 >
-                  <button
-                    data-plasmic-name={"button"}
-                    data-plasmic-override={overrides.button}
+                  <CtaButtonHomePage
+                    data-plasmic-name={"ctaButtonHomePage"}
+                    data-plasmic-override={overrides.ctaButtonHomePage}
                     className={classNames(
-                      projectcss.all,
-                      projectcss.button,
-                      sty.button
+                      "__wab_instance",
+                      sty.ctaButtonHomePage
                     )}
-                    onClick={"" as const}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___4N7II
-                      )}
-                    >
-                      {"Request early access"}
-                    </div>
-                  </button>
+                  />
                 </p.Stack>
               </p.Stack>
             </div>
@@ -1958,7 +1947,7 @@ const PlasmicDescendants = {
     "title",
     "description",
     "frame179",
-    "button",
+    "ctaButtonHomePage",
     "frame138",
     "frame137",
     "sectionTitle",
@@ -2132,7 +2121,7 @@ const PlasmicDescendants = {
     "title",
     "description",
     "frame179",
-    "button",
+    "ctaButtonHomePage",
     "frame138",
     "frame137",
     "sectionTitle",
@@ -2305,15 +2294,22 @@ const PlasmicDescendants = {
     "title",
     "description",
     "frame179",
-    "button"
+    "ctaButtonHomePage"
   ],
   frame140: ["frame140"],
-  frame96: ["frame96", "heading", "title", "description", "frame179", "button"],
+  frame96: [
+    "frame96",
+    "heading",
+    "title",
+    "description",
+    "frame179",
+    "ctaButtonHomePage"
+  ],
   heading: ["heading", "title", "description"],
   title: ["title"],
   description: ["description"],
-  frame179: ["frame179", "button"],
-  button: ["button"],
+  frame179: ["frame179", "ctaButtonHomePage"],
+  ctaButtonHomePage: ["ctaButtonHomePage"],
   frame138: [
     "frame138",
     "frame137",
@@ -3040,7 +3036,7 @@ type NodeDefaultElementType = {
   title: "div";
   description: "div";
   frame179: "div";
-  button: "button";
+  ctaButtonHomePage: typeof CtaButtonHomePage;
   frame138: "div";
   frame137: "div";
   sectionTitle: "div";
@@ -3271,7 +3267,7 @@ export const PlasmicHomepage = Object.assign(
     title: makeNodeComponent("title"),
     description: makeNodeComponent("description"),
     frame179: makeNodeComponent("frame179"),
-    button: makeNodeComponent("button"),
+    ctaButtonHomePage: makeNodeComponent("ctaButtonHomePage"),
     frame138: makeNodeComponent("frame138"),
     frame137: makeNodeComponent("frame137"),
     sectionTitle: makeNodeComponent("sectionTitle"),
