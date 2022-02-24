@@ -78,7 +78,8 @@ function PlasmicCtaButtonHomePage__RenderFunc(props: {
         projectcss.plasmic_default_styles,
         sty.root
       )}
-      onClick={"" as const}
+      onClick={"requestAccess()" as const}
+      style={"" as const}
     >
       <div
         data-plasmic-name={"text"}

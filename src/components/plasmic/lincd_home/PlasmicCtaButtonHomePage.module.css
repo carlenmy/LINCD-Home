@@ -8,8 +8,12 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  cursor: pointer;
   border-radius: 8px;
   padding: 20px 24px;
+}
+.root:hover {
+  background: #419e65;
 }
 .text {
   display: block;

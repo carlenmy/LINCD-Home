@@ -59,7 +59,6 @@ export type PlasmicHomepage__OverridesType = {
   title?: p.Flex<"div">;
   description?: p.Flex<"div">;
   frame179?: p.Flex<"div">;
-  ctaButtonHomePage?: p.Flex<typeof CtaButtonHomePage>;
   frame138?: p.Flex<"div">;
   frame137?: p.Flex<"div">;
   sectionTitle?: p.Flex<"div">;
@@ -171,8 +170,6 @@ export type PlasmicHomepage__OverridesType = {
   largeTagBase9?: p.Flex<"div">;
   frame157?: p.Flex<"div">;
   rectangle82?: p.Flex<"div">;
-  button4?: p.Flex<"div">;
-  button5?: p.Flex<"div">;
   frame210?: p.Flex<"div">;
   sectionTitle3?: p.Flex<"div">;
   image50?: p.Flex<"div">;
@@ -185,8 +182,6 @@ export type PlasmicHomepage__OverridesType = {
   frame129?: p.Flex<"div">;
   sectionTitle5?: p.Flex<"div">;
   sectionDescription16?: p.Flex<"div">;
-  button6?: p.Flex<"div">;
-  button7?: p.Flex<"button">;
   frame125?: p.Flex<"div">;
   featureInfo?: p.Flex<"div">;
   sectionTitle6?: p.Flex<"div">;
@@ -322,11 +317,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames(projectcss.all, sty.frame179)}
                 >
                   <CtaButtonHomePage
-                    data-plasmic-name={"ctaButtonHomePage"}
-                    data-plasmic-override={overrides.ctaButtonHomePage}
                     className={classNames(
                       "__wab_instance",
-                      sty.ctaButtonHomePage
+                      sty.ctaButtonHomePage__gtcgI
                     )}
                   />
                 </p.Stack>
@@ -1374,27 +1367,12 @@ function PlasmicHomepage__RenderFunc(props: {
                   ) : null}
                 </p.Stack>
 
-                <div
-                  data-plasmic-name={"button4"}
-                  data-plasmic-override={overrides.button4}
-                  className={classNames(projectcss.all, sty.button4)}
-                >
-                  <div
-                    data-plasmic-name={"button5"}
-                    data-plasmic-override={overrides.button5}
-                    className={classNames(projectcss.all, sty.button5)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__pnmU1
-                      )}
-                    >
-                      {"Request early access"}
-                    </div>
-                  </div>
-                </div>
+                <CtaButtonHomePage
+                  className={classNames(
+                    "__wab_instance",
+                    sty.ctaButtonHomePage__dFyHj
+                  )}
+                />
               </p.Stack>
             </p.Stack>
 
@@ -1510,31 +1488,12 @@ function PlasmicHomepage__RenderFunc(props: {
                   {"Join our bi-monthly courses on new web3 technologies"}
                 </div>
 
-                <div
-                  data-plasmic-name={"button6"}
-                  data-plasmic-override={overrides.button6}
-                  className={classNames(projectcss.all, sty.button6)}
-                >
-                  <button
-                    data-plasmic-name={"button7"}
-                    data-plasmic-override={overrides.button7}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.button,
-                      sty.button7
-                    )}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__kiPS
-                      )}
-                    >
-                      {"Request early access"}
-                    </div>
-                  </button>
-                </div>
+                <CtaButtonHomePage
+                  className={classNames(
+                    "__wab_instance",
+                    sty.ctaButtonHomePage__hxKz4
+                  )}
+                />
               </p.Stack>
             </p.Stack>
 
@@ -1730,7 +1689,6 @@ const PlasmicDescendants = {
     "title",
     "description",
     "frame179",
-    "ctaButtonHomePage",
     "frame138",
     "frame137",
     "sectionTitle",
@@ -1842,8 +1800,6 @@ const PlasmicDescendants = {
     "largeTagBase9",
     "frame157",
     "rectangle82",
-    "button4",
-    "button5",
     "frame210",
     "sectionTitle3",
     "image50",
@@ -1856,8 +1812,6 @@ const PlasmicDescendants = {
     "frame129",
     "sectionTitle5",
     "sectionDescription16",
-    "button6",
-    "button7",
     "frame125",
     "featureInfo",
     "sectionTitle6",
@@ -1885,7 +1839,6 @@ const PlasmicDescendants = {
     "title",
     "description",
     "frame179",
-    "ctaButtonHomePage",
     "frame138",
     "frame137",
     "sectionTitle",
@@ -1997,8 +1950,6 @@ const PlasmicDescendants = {
     "largeTagBase9",
     "frame157",
     "rectangle82",
-    "button4",
-    "button5",
     "frame210",
     "sectionTitle3",
     "image50",
@@ -2011,8 +1962,6 @@ const PlasmicDescendants = {
     "frame129",
     "sectionTitle5",
     "sectionDescription16",
-    "button6",
-    "button7",
     "frame125",
     "featureInfo",
     "sectionTitle6",
@@ -2038,23 +1987,14 @@ const PlasmicDescendants = {
     "heading",
     "title",
     "description",
-    "frame179",
-    "ctaButtonHomePage"
+    "frame179"
   ],
   frame140: ["frame140"],
-  frame96: [
-    "frame96",
-    "heading",
-    "title",
-    "description",
-    "frame179",
-    "ctaButtonHomePage"
-  ],
+  frame96: ["frame96", "heading", "title", "description", "frame179"],
   heading: ["heading", "title", "description"],
   title: ["title"],
   description: ["description"],
-  frame179: ["frame179", "ctaButtonHomePage"],
-  ctaButtonHomePage: ["ctaButtonHomePage"],
+  frame179: ["frame179"],
   frame138: [
     "frame138",
     "frame137",
@@ -2172,9 +2112,7 @@ const PlasmicDescendants = {
     "tag9",
     "largeTagBase9",
     "frame157",
-    "rectangle82",
-    "button4",
-    "button5"
+    "rectangle82"
   ],
   frame126: [
     "frame126",
@@ -2281,9 +2219,7 @@ const PlasmicDescendants = {
     "tag9",
     "largeTagBase9",
     "frame157",
-    "rectangle82",
-    "button4",
-    "button5"
+    "rectangle82"
   ],
   frame169: ["frame169", "sectionTitle2", "rectangle79", "sectionDescription2"],
   sectionTitle2: ["sectionTitle2"],
@@ -2614,8 +2550,6 @@ const PlasmicDescendants = {
   largeTagBase9: ["largeTagBase9"],
   frame157: ["frame157", "rectangle82"],
   rectangle82: ["rectangle82"],
-  button4: ["button4", "button5"],
-  button5: ["button5"],
   frame210: ["frame210", "sectionTitle3", "image50"],
   sectionTitle3: ["sectionTitle3"],
   image50: ["image50"],
@@ -2628,22 +2562,12 @@ const PlasmicDescendants = {
     "image52",
     "frame129",
     "sectionTitle5",
-    "sectionDescription16",
-    "button6",
-    "button7"
+    "sectionDescription16"
   ],
   image52: ["image52"],
-  frame129: [
-    "frame129",
-    "sectionTitle5",
-    "sectionDescription16",
-    "button6",
-    "button7"
-  ],
+  frame129: ["frame129", "sectionTitle5", "sectionDescription16"],
   sectionTitle5: ["sectionTitle5"],
   sectionDescription16: ["sectionDescription16"],
-  button6: ["button6", "button7"],
-  button7: ["button7"],
   frame125: [
     "frame125",
     "featureInfo",
@@ -2695,7 +2619,6 @@ type NodeDefaultElementType = {
   title: "div";
   description: "div";
   frame179: "div";
-  ctaButtonHomePage: typeof CtaButtonHomePage;
   frame138: "div";
   frame137: "div";
   sectionTitle: "div";
@@ -2807,8 +2730,6 @@ type NodeDefaultElementType = {
   largeTagBase9: "div";
   frame157: "div";
   rectangle82: "div";
-  button4: "div";
-  button5: "div";
   frame210: "div";
   sectionTitle3: "div";
   image50: "div";
@@ -2821,8 +2742,6 @@ type NodeDefaultElementType = {
   frame129: "div";
   sectionTitle5: "div";
   sectionDescription16: "div";
-  button6: "div";
-  button7: "button";
   frame125: "div";
   featureInfo: "div";
   sectionTitle6: "div";
@@ -2907,7 +2826,6 @@ export const PlasmicHomepage = Object.assign(
     title: makeNodeComponent("title"),
     description: makeNodeComponent("description"),
     frame179: makeNodeComponent("frame179"),
-    ctaButtonHomePage: makeNodeComponent("ctaButtonHomePage"),
     frame138: makeNodeComponent("frame138"),
     frame137: makeNodeComponent("frame137"),
     sectionTitle: makeNodeComponent("sectionTitle"),
@@ -3019,8 +2937,6 @@ export const PlasmicHomepage = Object.assign(
     largeTagBase9: makeNodeComponent("largeTagBase9"),
     frame157: makeNodeComponent("frame157"),
     rectangle82: makeNodeComponent("rectangle82"),
-    button4: makeNodeComponent("button4"),
-    button5: makeNodeComponent("button5"),
     frame210: makeNodeComponent("frame210"),
     sectionTitle3: makeNodeComponent("sectionTitle3"),
     image50: makeNodeComponent("image50"),
@@ -3033,8 +2949,6 @@ export const PlasmicHomepage = Object.assign(
     frame129: makeNodeComponent("frame129"),
     sectionTitle5: makeNodeComponent("sectionTitle5"),
     sectionDescription16: makeNodeComponent("sectionDescription16"),
-    button6: makeNodeComponent("button6"),
-    button7: makeNodeComponent("button7"),
     frame125: makeNodeComponent("frame125"),
     featureInfo: makeNodeComponent("featureInfo"),
     sectionTitle6: makeNodeComponent("sectionTitle6"),

@@ -295,7 +295,7 @@
   > img {
   margin-left: 40px;
 }
-.ctaButtonHomePage:global(.__wab_instance) {
+.ctaButtonHomePage__gtcgI:global(.__wab_instance) {
   position: relative;
 }
 .frame138 {
@@ -3343,37 +3343,8 @@
   align-self: stretch;
   flex-shrink: 0;
 }
-.button4 {
-  filter: drop-shadow(0px 9px 25px rgba(0, 0, 0, 0.05));
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.button5 {
-  background: rgba(135, 202, 161, 1);
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 8px;
-  padding: 20px 24px;
-}
-.text__pnmU1 {
-  display: block;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0em;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 1);
+.ctaButtonHomePage__dFyHj:global(.__wab_instance) {
+  max-width: 100%;
   position: relative;
 }
 .frame210 {
@@ -3715,42 +3686,8 @@
     text-align: center;
   }
 }
-.button6 {
-  filter: drop-shadow(0px 9px 25px rgba(0, 0, 0, 0.05));
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.button7 {
-  background: rgba(135, 202, 161, 1);
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 8px;
-  padding: 20px 24px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .button7 {
-    align-self: stretch;
-  }
-}
-.text__kiPS {
-  display: block;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0em;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 1);
+.ctaButtonHomePage__hxKz4:global(.__wab_instance) {
+  max-width: 100%;
   position: relative;
 }
 .frame125 {
