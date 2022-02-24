@@ -191,8 +191,6 @@ export type PlasmicHomepage__OverridesType = {
   featureInfo?: p.Flex<"div">;
   sectionTitle6?: p.Flex<"div">;
   sectionDescription17?: p.Flex<"div">;
-  button8?: p.Flex<"div">;
-  button9?: p.Flex<"button">;
   image22?: p.Flex<"div">;
   frame130?: p.Flex<"div">;
   image51?: p.Flex<"div">;
@@ -328,7 +326,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Introducing LINCD - Linked Interoperable Code & Data. Employ the best data practices, speed up your development and align with web3"
+                      "Introducing LINCD - Linked Interoperable Code & Data. Employ the best data practices, speed up your development and align with web 3.0"
                     }
                   </div>
                 </p.Stack>
@@ -1514,7 +1512,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.sectionTitle5
                   )}
                 >
-                  {"Learn more about web3"}
+                  {"Learn more about web 3.0"}
                 </div>
 
                 <div
@@ -1595,32 +1593,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   {
                     "You can join our community of data scientists, knowledge experts, and developers who are dedicated to making the world of data and application building a better place."
                   }
-                </div>
-
-                <div
-                  data-plasmic-name={"button8"}
-                  data-plasmic-override={overrides.button8}
-                  className={classNames(projectcss.all, sty.button8)}
-                >
-                  <button
-                    data-plasmic-name={"button9"}
-                    data-plasmic-override={overrides.button9}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.button,
-                      sty.button9
-                    )}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__x2BD
-                      )}
-                    >
-                      {"Join the community"}
-                    </div>
-                  </button>
                 </div>
               </p.Stack>
 
@@ -1722,7 +1694,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 )}
               >
                 {
-                  "Come and learn about Web3 and the possibilities of LINCD Web. As you complete tasks and attend events, you will accumulate credit. Credit can be converted to the token when we launch."
+                  "Come and learn about Web 3.0 and the possibilities of LINCD Web. As you complete tasks and attend events, you will accumulate credit. Credit can be converted to the token when we launch."
                 }
               </div>
 
@@ -1802,7 +1774,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         )}
                       >
                         {
-                          "Upgrade your Web3 skills and learn to make universal components. Quickly pick up the best data standards easily."
+                          "Upgrade your Web 3.0 skills and learn to make universal components. Quickly pick up the best data standards easily."
                         }
                       </div>
                     </p.Stack>
@@ -2079,8 +2051,6 @@ const PlasmicDescendants = {
     "featureInfo",
     "sectionTitle6",
     "sectionDescription17",
-    "button8",
-    "button9",
     "image22",
     "frame130",
     "image51",
@@ -2253,8 +2223,6 @@ const PlasmicDescendants = {
     "featureInfo",
     "sectionTitle6",
     "sectionDescription17",
-    "button8",
-    "button9",
     "image22",
     "frame130",
     "image51",
@@ -2904,21 +2872,11 @@ const PlasmicDescendants = {
     "featureInfo",
     "sectionTitle6",
     "sectionDescription17",
-    "button8",
-    "button9",
     "image22"
   ],
-  featureInfo: [
-    "featureInfo",
-    "sectionTitle6",
-    "sectionDescription17",
-    "button8",
-    "button9"
-  ],
+  featureInfo: ["featureInfo", "sectionTitle6", "sectionDescription17"],
   sectionTitle6: ["sectionTitle6"],
   sectionDescription17: ["sectionDescription17"],
-  button8: ["button8", "button9"],
-  button9: ["button9"],
   image22: ["image22"],
   frame130: [
     "frame130",
@@ -3168,8 +3126,6 @@ type NodeDefaultElementType = {
   featureInfo: "div";
   sectionTitle6: "div";
   sectionDescription17: "div";
-  button8: "div";
-  button9: "button";
   image22: "div";
   frame130: "div";
   image51: "div";
@@ -3399,8 +3355,6 @@ export const PlasmicHomepage = Object.assign(
     featureInfo: makeNodeComponent("featureInfo"),
     sectionTitle6: makeNodeComponent("sectionTitle6"),
     sectionDescription17: makeNodeComponent("sectionDescription17"),
-    button8: makeNodeComponent("button8"),
-    button9: makeNodeComponent("button9"),
     image22: makeNodeComponent("image22"),
     frame130: makeNodeComponent("frame130"),
     image51: makeNodeComponent("image51"),

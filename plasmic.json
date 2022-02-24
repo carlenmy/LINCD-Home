@@ -136,6 +136,11 @@
           "id": "Hlss1G1xAh",
           "name": "image 44",
           "filePath": "plasmic/lincd_home/images/image44.png"
+        },
+        {
+          "id": "4kljAfTdZ",
+          "name": "linked-code.png",
+          "filePath": "plasmic/lincd_home/images/linkedCodepng.png"
         }
       ],
       "indirect": false,
