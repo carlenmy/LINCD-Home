@@ -199,28 +199,11 @@ export type PlasmicHomepage__OverridesType = {
   sectionDescription18?: p.Flex<"div">;
   frame132?: p.Flex<"div">;
   frame145?: p.Flex<"div">;
-  image34?: p.Flex<"div">;
   sectionTitle8?: p.Flex<"div">;
+  image34?: p.Flex<"div">;
+  sectionTitle10?: p.Flex<"div">;
   sectionDescription19?: p.Flex<"div">;
-  button10?: p.Flex<"div">;
-  button11?: p.Flex<"button">;
-  frame144?: p.Flex<"div">;
-  cards?: p.Flex<"div">;
-  frame98?: p.Flex<"div">;
-  card?: p.Flex<"div">;
-  cardTitle?: p.Flex<"div">;
-  cardDescription?: p.Flex<"div">;
-  card2?: p.Flex<"div">;
-  cardTitle2?: p.Flex<"div">;
-  cardDescription2?: p.Flex<"div">;
-  card3?: p.Flex<"div">;
-  cardTitle3?: p.Flex<"div">;
-  cardDescription3?: p.Flex<"div">;
-  startAnOpenEnterprise?: p.Flex<"div">;
-  image44?: p.Flex<"div">;
-  info?: p.Flex<"div">;
-  sectionTitle9?: p.Flex<"div">;
-  sectionDescription20?: p.Flex<"div">;
+  link?: p.Flex<"a">;
 };
 
 export interface DefaultHomepageProps {
@@ -1666,12 +1649,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.frame145)}
               >
                 <div
-                  data-plasmic-name={"image34"}
-                  data-plasmic-override={overrides.image34}
-                  className={classNames(projectcss.all, sty.image34)}
-                />
-
-                <div
                   data-plasmic-name={"sectionTitle8"}
                   data-plasmic-override={overrides.sectionTitle8}
                   className={classNames(
@@ -1680,7 +1657,25 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.sectionTitle8
                   )}
                 >
-                  {"Semantu DAO"}
+                  {"Built by"}
+                </div>
+
+                <div
+                  data-plasmic-name={"image34"}
+                  data-plasmic-override={overrides.image34}
+                  className={classNames(projectcss.all, sty.image34)}
+                />
+
+                <div
+                  data-plasmic-name={"sectionTitle10"}
+                  data-plasmic-override={overrides.sectionTitle10}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.sectionTitle10
+                  )}
+                >
+                  {"Semantu"}
                 </div>
               </p.Stack>
 
@@ -1693,213 +1688,29 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.sectionDescription19
                 )}
               >
-                {
-                  "Come and learn about Web 3.0 and the possibilities of LINCD Web. As you complete tasks and attend events, you will accumulate credit. Credit can be converted to the token when we launch."
-                }
-              </div>
-
-              <div
-                data-plasmic-name={"button10"}
-                data-plasmic-override={overrides.button10}
-                className={classNames(projectcss.all, sty.button10)}
-              >
-                <button
-                  data-plasmic-name={"button11"}
-                  data-plasmic-override={overrides.button11}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.button,
-                    sty.button11
-                  )}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__rk3Qf
-                    )}
-                  >
-                    {"Request early access"}
-                  </div>
-                </button>
-              </div>
-
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame144"}
-                data-plasmic-override={overrides.frame144}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame144)}
-              >
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"cards"}
-                  data-plasmic-override={overrides.cards}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.cards)}
-                >
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame98"}
-                    data-plasmic-override={overrides.frame98}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame98)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"card"}
-                      data-plasmic-override={overrides.card}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.card)}
-                    >
-                      <div
-                        data-plasmic-name={"cardTitle"}
-                        data-plasmic-override={overrides.cardTitle}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.cardTitle
-                        )}
-                      >
-                        {"Learn"}
-                      </div>
-
-                      <div
-                        data-plasmic-name={"cardDescription"}
-                        data-plasmic-override={overrides.cardDescription}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.cardDescription
-                        )}
-                      >
-                        {
-                          "Upgrade your Web 3.0 skills and learn to make universal components. Quickly pick up the best data standards easily."
-                        }
-                      </div>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"card2"}
-                      data-plasmic-override={overrides.card2}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.card2)}
-                    >
-                      <div
-                        data-plasmic-name={"cardTitle2"}
-                        data-plasmic-override={overrides.cardTitle2}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.cardTitle2
-                        )}
-                      >
-                        {"Play"}
-                      </div>
-
-                      <div
-                        data-plasmic-name={"cardDescription2"}
-                        data-plasmic-override={overrides.cardDescription2}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.cardDescription2
-                        )}
-                      >
-                        {
-                          "Experiment with the new standard, find out how easy it becomes when code is linked to data structures."
-                        }
-                      </div>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"card3"}
-                      data-plasmic-override={overrides.card3}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.card3)}
-                    >
-                      <div
-                        data-plasmic-name={"cardTitle3"}
-                        data-plasmic-override={overrides.cardTitle3}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.cardTitle3
-                        )}
-                      >
-                        {"Build"}
-                      </div>
-
-                      <div
-                        data-plasmic-name={"cardDescription3"}
-                        data-plasmic-override={overrides.cardDescription3}
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.cardDescription3
-                        )}
-                      >
-                        {
-                          "Add modules to an open repository, learn how to use LINCD in your latest project, and see what others have developed."
-                        }
-                      </div>
-                    </p.Stack>
-                  </p.Stack>
-                </p.Stack>
-              </p.Stack>
-
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"startAnOpenEnterprise"}
-                data-plasmic-override={overrides.startAnOpenEnterprise}
-                hasGap={true}
-                className={classNames(
-                  projectcss.all,
-                  sty.startAnOpenEnterprise
-                )}
-              >
-                <div
-                  data-plasmic-name={"image44"}
-                  data-plasmic-override={overrides.image44}
-                  className={classNames(projectcss.all, sty.image44)}
-                />
-
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"info"}
-                  data-plasmic-override={overrides.info}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.info)}
-                >
-                  <div
-                    data-plasmic-name={"sectionTitle9"}
-                    data-plasmic-override={overrides.sectionTitle9}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.sectionTitle9
-                    )}
-                  >
-                    {"Job Opportunities"}
-                  </div>
-
-                  <div
-                    data-plasmic-name={"sectionDescription20"}
-                    data-plasmic-override={overrides.sectionDescription20}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.sectionDescription20
-                    )}
-                  >
+                <React.Fragment>
+                  <React.Fragment>
                     {
-                      "For those interested, we will also be looking to hire developers who show leadership, clean code, and creativity in their engagement within the community. "
+                      "LINCD was built by Semantu as a way to increase interoperability on the internet.\nSemantu is creating a no-code web 3.0 app builder based on LINCD.\n\nFor demo's on what could be done with LINCD see\n"
                     }
-                  </div>
-                </p.Stack>
-              </p.Stack>
+                  </React.Fragment>
+                  <a
+                    data-plasmic-name={"link"}
+                    data-plasmic-override={overrides.link}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.link
+                    )}
+                    href={"https://www.semantu.com/demos" as const}
+                  >
+                    {"www.semantu.com/demos"}
+                  </a>
+                  <React.Fragment>{""}</React.Fragment>
+                </React.Fragment>
+              </div>
             </p.Stack>
           </p.Stack>
         </p.Stack>
@@ -2059,28 +1870,11 @@ const PlasmicDescendants = {
     "sectionDescription18",
     "frame132",
     "frame145",
-    "image34",
     "sectionTitle8",
+    "image34",
+    "sectionTitle10",
     "sectionDescription19",
-    "button10",
-    "button11",
-    "frame144",
-    "cards",
-    "frame98",
-    "card",
-    "cardTitle",
-    "cardDescription",
-    "card2",
-    "cardTitle2",
-    "cardDescription2",
-    "card3",
-    "cardTitle3",
-    "cardDescription3",
-    "startAnOpenEnterprise",
-    "image44",
-    "info",
-    "sectionTitle9",
-    "sectionDescription20"
+    "link"
   ],
   home: [
     "home",
@@ -2231,28 +2025,11 @@ const PlasmicDescendants = {
     "sectionDescription18",
     "frame132",
     "frame145",
-    "image34",
     "sectionTitle8",
+    "image34",
+    "sectionTitle10",
     "sectionDescription19",
-    "button10",
-    "button11",
-    "frame144",
-    "cards",
-    "frame98",
-    "card",
-    "cardTitle",
-    "cardDescription",
-    "card2",
-    "cardTitle2",
-    "cardDescription2",
-    "card3",
-    "cardTitle3",
-    "cardDescription3",
-    "startAnOpenEnterprise",
-    "image44",
-    "info",
-    "sectionTitle9",
-    "sectionDescription20"
+    "link"
   ],
   frame141: [
     "frame141",
@@ -2892,94 +2669,18 @@ const PlasmicDescendants = {
   frame132: [
     "frame132",
     "frame145",
-    "image34",
     "sectionTitle8",
+    "image34",
+    "sectionTitle10",
     "sectionDescription19",
-    "button10",
-    "button11",
-    "frame144",
-    "cards",
-    "frame98",
-    "card",
-    "cardTitle",
-    "cardDescription",
-    "card2",
-    "cardTitle2",
-    "cardDescription2",
-    "card3",
-    "cardTitle3",
-    "cardDescription3",
-    "startAnOpenEnterprise",
-    "image44",
-    "info",
-    "sectionTitle9",
-    "sectionDescription20"
+    "link"
   ],
-  frame145: ["frame145", "image34", "sectionTitle8"],
-  image34: ["image34"],
+  frame145: ["frame145", "sectionTitle8", "image34", "sectionTitle10"],
   sectionTitle8: ["sectionTitle8"],
-  sectionDescription19: ["sectionDescription19"],
-  button10: ["button10", "button11"],
-  button11: ["button11"],
-  frame144: [
-    "frame144",
-    "cards",
-    "frame98",
-    "card",
-    "cardTitle",
-    "cardDescription",
-    "card2",
-    "cardTitle2",
-    "cardDescription2",
-    "card3",
-    "cardTitle3",
-    "cardDescription3"
-  ],
-  cards: [
-    "cards",
-    "frame98",
-    "card",
-    "cardTitle",
-    "cardDescription",
-    "card2",
-    "cardTitle2",
-    "cardDescription2",
-    "card3",
-    "cardTitle3",
-    "cardDescription3"
-  ],
-  frame98: [
-    "frame98",
-    "card",
-    "cardTitle",
-    "cardDescription",
-    "card2",
-    "cardTitle2",
-    "cardDescription2",
-    "card3",
-    "cardTitle3",
-    "cardDescription3"
-  ],
-  card: ["card", "cardTitle", "cardDescription"],
-  cardTitle: ["cardTitle"],
-  cardDescription: ["cardDescription"],
-  card2: ["card2", "cardTitle2", "cardDescription2"],
-  cardTitle2: ["cardTitle2"],
-  cardDescription2: ["cardDescription2"],
-  card3: ["card3", "cardTitle3", "cardDescription3"],
-  cardTitle3: ["cardTitle3"],
-  cardDescription3: ["cardDescription3"],
-  startAnOpenEnterprise: [
-    "startAnOpenEnterprise",
-    "image44",
-    "info",
-    "sectionTitle9",
-    "sectionDescription20"
-  ],
-  image44: ["image44"],
-  info: ["info", "sectionTitle9", "sectionDescription20"],
-  sectionTitle9: ["sectionTitle9"],
-  sectionDescription20: ["sectionDescription20"]
+  image34: ["image34"],
+  sectionTitle10: ["sectionTitle10"],
+  sectionDescription19: ["sectionDescription19", "link"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -3134,28 +2835,11 @@ type NodeDefaultElementType = {
   sectionDescription18: "div";
   frame132: "div";
   frame145: "div";
-  image34: "div";
   sectionTitle8: "div";
+  image34: "div";
+  sectionTitle10: "div";
   sectionDescription19: "div";
-  button10: "div";
-  button11: "button";
-  frame144: "div";
-  cards: "div";
-  frame98: "div";
-  card: "div";
-  cardTitle: "div";
-  cardDescription: "div";
-  card2: "div";
-  cardTitle2: "div";
-  cardDescription2: "div";
-  card3: "div";
-  cardTitle3: "div";
-  cardDescription3: "div";
-  startAnOpenEnterprise: "div";
-  image44: "div";
-  info: "div";
-  sectionTitle9: "div";
-  sectionDescription20: "div";
+  link: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -3363,28 +3047,11 @@ export const PlasmicHomepage = Object.assign(
     sectionDescription18: makeNodeComponent("sectionDescription18"),
     frame132: makeNodeComponent("frame132"),
     frame145: makeNodeComponent("frame145"),
-    image34: makeNodeComponent("image34"),
     sectionTitle8: makeNodeComponent("sectionTitle8"),
+    image34: makeNodeComponent("image34"),
+    sectionTitle10: makeNodeComponent("sectionTitle10"),
     sectionDescription19: makeNodeComponent("sectionDescription19"),
-    button10: makeNodeComponent("button10"),
-    button11: makeNodeComponent("button11"),
-    frame144: makeNodeComponent("frame144"),
-    cards: makeNodeComponent("cards"),
-    frame98: makeNodeComponent("frame98"),
-    card: makeNodeComponent("card"),
-    cardTitle: makeNodeComponent("cardTitle"),
-    cardDescription: makeNodeComponent("cardDescription"),
-    card2: makeNodeComponent("card2"),
-    cardTitle2: makeNodeComponent("cardTitle2"),
-    cardDescription2: makeNodeComponent("cardDescription2"),
-    card3: makeNodeComponent("card3"),
-    cardTitle3: makeNodeComponent("cardTitle3"),
-    cardDescription3: makeNodeComponent("cardDescription3"),
-    startAnOpenEnterprise: makeNodeComponent("startAnOpenEnterprise"),
-    image44: makeNodeComponent("image44"),
-    info: makeNodeComponent("info"),
-    sectionTitle9: makeNodeComponent("sectionTitle9"),
-    sectionDescription20: makeNodeComponent("sectionDescription20"),
+    link: makeNodeComponent("link"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
