@@ -40,14 +40,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: calc(0px - 149px);
-  height: calc(100% + 149px);
+  margin-top: calc(0px - 100px);
+  height: calc(100% + 100px);
 }
 .home > :global(.__wab_flex-container) > *,
 .home > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .home > :global(.__wab_flex-container) > picture > img,
 .home > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
-  margin-top: 149px;
+  margin-top: 100px;
 }
 @media (max-width: 834px) {
   .home {
@@ -299,22 +299,22 @@
   position: relative;
 }
 .frame138 {
-  flex-direction: row;
+  flex-direction: column;
   height: auto;
   display: flex;
   position: relative;
   align-self: stretch;
   width: 100%;
   min-width: 0;
-  padding: 10px 30px;
+  padding: 0px 30px 10px;
 }
 .frame138 > :global(.__wab_flex-container) {
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-width: 0;
-  margin-left: calc(0px - 30px);
-  width: calc(100% + 30px);
+  margin-top: calc(0px - 30px);
+  height: calc(100% + 30px);
 }
 .frame138 > :global(.__wab_flex-container) > *,
 .frame138 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -324,7 +324,7 @@
   > :global(.__wab_slot)
   > picture
   > img {
-  margin-left: 30px;
+  margin-top: 30px;
 }
 @media (max-width: 834px) {
   .frame138 {
@@ -354,7 +354,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .frame138 {
-    margin-top: calc(-50px + 149px) !important;
+    margin-top: calc(-50px + 100px) !important;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -367,15 +367,16 @@
   display: flex;
   position: relative;
   flex-grow: 1;
-  margin-top: 0px;
+  margin-top: calc(0px + 30px) !important;
   margin-right: 0px;
   margin-bottom: 0px;
-  margin-left: calc(50px + 30px) !important;
+  margin-left: 0px;
+  align-self: auto;
 }
 .frame137 > :global(.__wab_flex-container) {
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-top: calc(0px - 20px);
   height: calc(100% + 20px);
 }
@@ -391,66 +392,88 @@
 }
 @media (max-width: 834px) {
   .frame137 {
-    margin-left: calc(50px + 0px) !important;
+    margin-left: calc(0px + 0px) !important;
+    margin-top: calc(0px + 30px) !important;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .frame137 {
-    margin-top: 0px;
+    margin-top: calc(0px + 30px) !important;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: calc(0px + 0px) !important;
   }
 }
-.sectionTitle {
-  display: block;
-  font-size: 30px;
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0em;
-  line-height: 30px;
-  color: rgba(47, 47, 48, 1);
-  align-self: stretch;
-  position: relative;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .sectionTitle {
-    text-align: center;
-    align-self: auto;
-  }
-}
-.sectionDescription {
-  display: block;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  line-height: 32px;
-  color: rgba(102, 100, 94, 1);
-  align-self: flex-end;
-  position: relative;
-  padding: 20px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .sectionDescription {
-    text-align: center;
-    align-self: center;
-  }
-}
-.screenShot20220131At2561 {
+.lincdCodeExample {
   background: url("./images/linkedCodepng.png") center center / contain no-repeat;
   width: 100%;
   height: 459px;
   display: block;
   position: relative;
+  margin-top: calc(-250px + 20px) !important;
+  margin-right: -250px;
+  margin-bottom: 0px;
+  margin-left: -250px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+@media (max-width: 834px) {
+  .lincdCodeExample {
+    margin-top: calc(-250px + 20px) !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .lincdCodeExample {
+    margin-top: calc(-200px + 20px) !important;
+    margin-right: 0px;
+    margin-bottom: -120px;
+    margin-left: 0px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: block;
+    flex-direction: row;
+    flex-row-gap: 0px;
+  }
+}
+.sectionTitle {
+  display: block;
+  font-size: 48px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 54px;
+  color: rgba(47, 47, 48, 1);
+  align-self: stretch;
+  position: relative;
+  text-align: center;
+  margin-top: calc(22px + 20px) !important;
+}
+@media (max-width: 834px) {
+  .sectionTitle {
+    text-align: center;
+    margin-top: calc(22px + 20px) !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .sectionTitle {
+    text-align: center;
+    align-self: center;
+    margin-top: calc(22px + 20px) !important;
+  }
+}
+.text__mJ {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-weight: 500;
+  font-size: 32px;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .screenShot20220131At2561 {
-    margin-top: -50px;
-    margin-right: 0px;
-    margin-bottom: -120px;
-    margin-left: calc(0px + 0px) !important;
+  .text__mJ {
+    text-align: center;
   }
 }
 .frame127 {
@@ -599,6 +622,7 @@
 @media (max-width: 834px) {
   .sectionTitle2 {
     width: auto;
+    font-size: 40px;
   }
 }
 .rectangle79 {
@@ -621,6 +645,7 @@
 @media (max-width: 834px) {
   .sectionDescription2 {
     width: 100%;
+    line-height: 32px;
     min-width: 0;
   }
 }
@@ -721,6 +746,7 @@
   .frame178 {
     display: flex;
     flex-direction: column;
+    align-self: auto;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -3376,7 +3402,7 @@
 @media (max-width: 834px) {
   .frame210 {
     width: 100%;
-    margin-top: calc(5px + 149px) !important;
+    margin-top: calc(5px + 100px) !important;
     margin-right: 5px;
     margin-bottom: 5px;
     margin-left: 5px;
@@ -3388,36 +3414,7 @@
     min-width: 0;
   }
 }
-.sectionTitle3 {
-  display: block;
-  font-size: 48px;
-  text-align: center;
-  font-family: "Play", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0em;
-  line-height: 64px;
-  color: rgba(0, 0, 0, 1);
-  position: relative;
-  width: 1230px;
-}
-@media (max-width: 834px) {
-  .sectionTitle3 {
-    width: 100%;
-    font-size: 40px;
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .sectionTitle3 {
-    font-size: 30px;
-    margin-top: calc(-50px + 60px) !important;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding: 20px;
-  }
-}
-.image50 {
+.infographic {
   background: url("./images/image50.png") center center / cover no-repeat;
   width: 1072px;
   height: 262px;
@@ -3426,14 +3423,14 @@
   flex-shrink: 0;
 }
 @media (max-width: 834px) {
-  .image50 {
+  .infographic {
     width: 100%;
     background: url("./images/image50.png") center center / contain no-repeat;
     min-width: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .image50 {
+  .infographic {
     height: 130px;
     flex-shrink: 0;
     padding: 40px;
@@ -3473,6 +3470,7 @@
   .frame99 {
     width: 100%;
     min-width: 0;
+    padding: 100px 22px;
   }
 }
 @media (max-width: 834px) {
@@ -3582,7 +3580,7 @@
   .frame128 {
     display: flex;
     flex-direction: column;
-    margin-top: calc(-100px + 149px) !important;
+    margin-top: calc(-100px + 100px) !important;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -3664,6 +3662,12 @@
   align-self: stretch;
   position: relative;
 }
+@media (max-width: 834px) {
+  .sectionTitle5 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .sectionTitle5 {
     text-align: center;
@@ -3675,7 +3679,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: -0.02em;
-  line-height: 26px;
+  line-height: 32px;
   color: rgba(47, 47, 48, 1);
   align-self: stretch;
   position: relative;
@@ -3718,7 +3722,7 @@
 }
 @media (max-width: 834px) {
   .frame125 {
-    margin-top: calc(-50px + 149px) !important;
+    margin-top: calc(-50px + 100px) !important;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -3728,7 +3732,7 @@
   .frame125 {
     display: flex;
     flex-direction: column;
-    margin-top: calc(-50px + 149px) !important;
+    margin-top: calc(-50px + 100px) !important;
     padding: 20px;
   }
 }
@@ -3802,6 +3806,12 @@
   align-self: stretch;
   position: relative;
 }
+@media (max-width: 834px) {
+  .sectionTitle6 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .sectionTitle6 {
     text-align: center;
@@ -3813,7 +3823,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: -0.02em;
-  line-height: 26px;
+  line-height: 32px;
   color: rgba(47, 47, 48, 1);
   align-self: stretch;
   position: relative;
@@ -3872,7 +3882,7 @@
 }
 @media (max-width: 834px) {
   .frame130 {
-    margin-top: calc(-50px + 149px) !important;
+    margin-top: calc(-50px + 100px) !important;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -3882,7 +3892,7 @@
   .frame130 {
     display: flex;
     flex-direction: column;
-    margin-top: calc(-100px + 149px) !important;
+    margin-top: calc(-100px + 100px) !important;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -3965,6 +3975,12 @@
   align-self: stretch;
   position: relative;
 }
+@media (max-width: 834px) {
+  .sectionTitle7 {
+    line-height: 54px;
+    font-size: 40px;
+  }
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .sectionTitle7 {
     margin-top: calc(30px + 24px) !important;
@@ -3980,7 +3996,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: -0.02em;
-  line-height: 26px;
+  line-height: 32px;
   color: rgba(47, 47, 48, 1);
   align-self: stretch;
   position: relative;
@@ -3999,7 +4015,7 @@
   position: relative;
   align-self: stretch;
   padding-top: 80px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 .frame132 > :global(.__wab_flex-container) {
   flex-direction: column;
@@ -4020,10 +4036,10 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .frame132 {
-    margin-top: calc(5px + 149px) !important;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
+    margin-top: calc(0px + 100px) !important;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -4111,7 +4127,7 @@
   color: rgba(47, 47, 48, 1);
   position: relative;
 }
-.image34 {
+.semantuIcon {
   background: url("./images/image34.png") center center / cover no-repeat;
   width: 49px;
   height: 64px;
@@ -4136,7 +4152,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: -0.02em;
-  line-height: 26px;
+  line-height: 32px;
   color: rgba(47, 47, 48, 1);
   position: relative;
   width: 895px;

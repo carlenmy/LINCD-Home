@@ -61,9 +61,8 @@ export type PlasmicHomepage__OverridesType = {
   frame179?: p.Flex<"div">;
   frame138?: p.Flex<"div">;
   frame137?: p.Flex<"div">;
+  lincdCodeExample?: p.Flex<"div">;
   sectionTitle?: p.Flex<"div">;
-  sectionDescription?: p.Flex<"div">;
-  screenShot20220131At2561?: p.Flex<"div">;
   frame127?: p.Flex<"div">;
   frame126?: p.Flex<"div">;
   frame169?: p.Flex<"div">;
@@ -171,8 +170,7 @@ export type PlasmicHomepage__OverridesType = {
   frame157?: p.Flex<"div">;
   rectangle82?: p.Flex<"div">;
   frame210?: p.Flex<"div">;
-  sectionTitle3?: p.Flex<"div">;
-  image50?: p.Flex<"div">;
+  infographic?: p.Flex<"div">;
   frame99?: p.Flex<"div">;
   frame97?: p.Flex<"div">;
   sectionTitle4?: p.Flex<"div">;
@@ -195,7 +193,7 @@ export type PlasmicHomepage__OverridesType = {
   frame132?: p.Flex<"div">;
   frame145?: p.Flex<"div">;
   sectionTitle8?: p.Flex<"div">;
-  image34?: p.Flex<"div">;
+  semantuIcon?: p.Flex<"div">;
   sectionTitle10?: p.Flex<"div">;
   sectionDescription19?: p.Flex<"div">;
   link?: p.Flex<"a">;
@@ -304,7 +302,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Introducing LINCD - Linked Interoperable Code & Data. Employ the best data practices, speed up your development and align with web 3.0"
+                      "A Javascript library that employs the best data practices, speeds up your development, and aligns with Web 3.0."
                     }
                   </div>
                 </p.Stack>
@@ -341,6 +339,13 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.frame137)}
               >
                 <div
+                  data-plasmic-name={"lincdCodeExample"}
+                  data-plasmic-override={overrides.lincdCodeExample}
+                  alt={"Coding excerpt from LINCD.js protocol" as const}
+                  className={classNames(projectcss.all, sty.lincdCodeExample)}
+                />
+
+                <div
                   data-plasmic-name={"sectionTitle"}
                   data-plasmic-override={overrides.sectionTitle}
                   className={classNames(
@@ -349,32 +354,49 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.sectionTitle
                   )}
                 >
-                  {"A new standard of reusability"}
+                  {"LINCD "}
                 </div>
 
                 <div
-                  data-plasmic-name={"sectionDescription"}
-                  data-plasmic-override={overrides.sectionDescription}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.sectionDescription
+                    sty.text__mJ
                   )}
                 >
-                  {
-                    "With LINCD, you can easily create and share code modules across different environments using W3C’s Linked Data standards. "
-                  }
+                  <React.Fragment>
+                    <React.Fragment>{""}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"L"}
+                    </span>
+                    <React.Fragment>{"inked "}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"In"}
+                    </span>
+                    <React.Fragment>{"teroperable "}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"C"}
+                    </span>
+                    <React.Fragment>{"ode & "}</React.Fragment>
+                    <span
+                      className={"plasmic_default__all plasmic_default__span"}
+                      style={{ fontWeight: 700 }}
+                    >
+                      {"D"}
+                    </span>
+                    <React.Fragment>{"ata. "}</React.Fragment>
+                  </React.Fragment>
                 </div>
               </p.Stack>
-
-              <div
-                data-plasmic-name={"screenShot20220131At2561"}
-                data-plasmic-override={overrides.screenShot20220131At2561}
-                className={classNames(
-                  projectcss.all,
-                  sty.screenShot20220131At2561
-                )}
-              />
             </p.Stack>
 
             <p.Stack
@@ -407,7 +429,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.sectionTitle2
                     )}
                   >
-                    {"LINCD Library"}
+                    {"The Library"}
                   </div>
 
                   <div
@@ -426,7 +448,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     )}
                   >
                     {
-                      "LINCD is a lightweight Javascript library that helps you to integrate data from different sources into one graph.\nand build visualizations with ease"
+                      "LINCD is a lightweight Javascript library that helps you to integrate data from different sources and build visualizations with ease. \nCreate and share code modules across different environments using W3C’s Linked Data standards."
                     }
                   </div>
                 </p.Stack>
@@ -1384,21 +1406,10 @@ function PlasmicHomepage__RenderFunc(props: {
               className={classNames(projectcss.all, sty.frame210)}
             >
               <div
-                data-plasmic-name={"sectionTitle3"}
-                data-plasmic-override={overrides.sectionTitle3}
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.sectionTitle3
-                )}
-              >
-                {"A library that builds the new web"}
-              </div>
-
-              <div
-                data-plasmic-name={"image50"}
-                data-plasmic-override={overrides.image50}
-                className={classNames(projectcss.all, sty.image50)}
+                data-plasmic-name={"infographic"}
+                data-plasmic-override={overrides.infographic}
+                alt={"LINCD library infographic" as const}
+                className={classNames(projectcss.all, sty.infographic)}
               />
             </p.Stack>
 
@@ -1454,6 +1465,7 @@ function PlasmicHomepage__RenderFunc(props: {
               <div
                 data-plasmic-name={"image52"}
                 data-plasmic-override={overrides.image52}
+                alt={"LINCD academy community call" as const}
                 className={classNames(projectcss.all, sty.image52)}
               />
 
@@ -1473,7 +1485,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.sectionTitle5
                   )}
                 >
-                  {"Learn more about web 3.0"}
+                  {"Learn more about Web 3.0"}
                 </div>
 
                 <div
@@ -1485,7 +1497,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.sectionDescription16
                   )}
                 >
-                  {"Join our bi-monthly courses on new web3 technologies"}
+                  {
+                    "Join our bi-monthly courses on new Web 3.0 and Linked Data."
+                  }
                 </div>
 
                 <CtaButtonHomePage
@@ -1541,6 +1555,7 @@ function PlasmicHomepage__RenderFunc(props: {
               <div
                 data-plasmic-name={"image22"}
                 data-plasmic-override={overrides.image22}
+                alt={"Graph of LINCD community members" as const}
                 className={classNames(projectcss.all, sty.image22)}
               />
             </p.Stack>
@@ -1555,6 +1570,9 @@ function PlasmicHomepage__RenderFunc(props: {
               <div
                 data-plasmic-name={"image51"}
                 data-plasmic-override={overrides.image51}
+                alt={
+                  "Example of LINCD developer claiming a bounty reward" as const
+                }
                 className={classNames(projectcss.all, sty.image51)}
               />
 
@@ -1620,9 +1638,10 @@ function PlasmicHomepage__RenderFunc(props: {
                 </div>
 
                 <div
-                  data-plasmic-name={"image34"}
-                  data-plasmic-override={overrides.image34}
-                  className={classNames(projectcss.all, sty.image34)}
+                  data-plasmic-name={"semantuIcon"}
+                  data-plasmic-override={overrides.semantuIcon}
+                  alt={"Semantu icon" as const}
+                  className={classNames(projectcss.all, sty.semantuIcon)}
                 />
 
                 <div
@@ -1650,7 +1669,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 <React.Fragment>
                   <React.Fragment>
                     {
-                      "LINCD was built by Semantu as a way to increase interoperability on the internet.\nSemantu is creating a no-code web 3.0 app builder based on LINCD.\n\nFor demo's on what could be done with LINCD see\n"
+                      "LINCD was built by Semantu as a way to increase interoperability on the internet.\nSemantu is creating a no-code Web 3.0 app builder based on LINCD.\n\nFor demo's on what could be done with LINCD.\n"
                     }
                   </React.Fragment>
                   <a
@@ -1691,9 +1710,8 @@ const PlasmicDescendants = {
     "frame179",
     "frame138",
     "frame137",
+    "lincdCodeExample",
     "sectionTitle",
-    "sectionDescription",
-    "screenShot20220131At2561",
     "frame127",
     "frame126",
     "frame169",
@@ -1801,8 +1819,7 @@ const PlasmicDescendants = {
     "frame157",
     "rectangle82",
     "frame210",
-    "sectionTitle3",
-    "image50",
+    "infographic",
     "frame99",
     "frame97",
     "sectionTitle4",
@@ -1825,7 +1842,7 @@ const PlasmicDescendants = {
     "frame132",
     "frame145",
     "sectionTitle8",
-    "image34",
+    "semantuIcon",
     "sectionTitle10",
     "sectionDescription19",
     "link"
@@ -1841,9 +1858,8 @@ const PlasmicDescendants = {
     "frame179",
     "frame138",
     "frame137",
+    "lincdCodeExample",
     "sectionTitle",
-    "sectionDescription",
-    "screenShot20220131At2561",
     "frame127",
     "frame126",
     "frame169",
@@ -1951,8 +1967,7 @@ const PlasmicDescendants = {
     "frame157",
     "rectangle82",
     "frame210",
-    "sectionTitle3",
-    "image50",
+    "infographic",
     "frame99",
     "frame97",
     "sectionTitle4",
@@ -1975,7 +1990,7 @@ const PlasmicDescendants = {
     "frame132",
     "frame145",
     "sectionTitle8",
-    "image34",
+    "semantuIcon",
     "sectionTitle10",
     "sectionDescription19",
     "link"
@@ -1995,17 +2010,10 @@ const PlasmicDescendants = {
   title: ["title"],
   description: ["description"],
   frame179: ["frame179"],
-  frame138: [
-    "frame138",
-    "frame137",
-    "sectionTitle",
-    "sectionDescription",
-    "screenShot20220131At2561"
-  ],
-  frame137: ["frame137", "sectionTitle", "sectionDescription"],
+  frame138: ["frame138", "frame137", "lincdCodeExample", "sectionTitle"],
+  frame137: ["frame137", "lincdCodeExample", "sectionTitle"],
+  lincdCodeExample: ["lincdCodeExample"],
   sectionTitle: ["sectionTitle"],
-  sectionDescription: ["sectionDescription"],
-  screenShot20220131At2561: ["screenShot20220131At2561"],
   frame127: [
     "frame127",
     "frame126",
@@ -2550,9 +2558,8 @@ const PlasmicDescendants = {
   largeTagBase9: ["largeTagBase9"],
   frame157: ["frame157", "rectangle82"],
   rectangle82: ["rectangle82"],
-  frame210: ["frame210", "sectionTitle3", "image50"],
-  sectionTitle3: ["sectionTitle3"],
-  image50: ["image50"],
+  frame210: ["frame210", "infographic"],
+  infographic: ["infographic"],
   frame99: ["frame99", "frame97", "sectionTitle4", "sectionDescription15"],
   frame97: ["frame97", "sectionTitle4", "sectionDescription15"],
   sectionTitle4: ["sectionTitle4"],
@@ -2594,14 +2601,14 @@ const PlasmicDescendants = {
     "frame132",
     "frame145",
     "sectionTitle8",
-    "image34",
+    "semantuIcon",
     "sectionTitle10",
     "sectionDescription19",
     "link"
   ],
-  frame145: ["frame145", "sectionTitle8", "image34", "sectionTitle10"],
+  frame145: ["frame145", "sectionTitle8", "semantuIcon", "sectionTitle10"],
   sectionTitle8: ["sectionTitle8"],
-  image34: ["image34"],
+  semantuIcon: ["semantuIcon"],
   sectionTitle10: ["sectionTitle10"],
   sectionDescription19: ["sectionDescription19", "link"],
   link: ["link"]
@@ -2621,9 +2628,8 @@ type NodeDefaultElementType = {
   frame179: "div";
   frame138: "div";
   frame137: "div";
+  lincdCodeExample: "div";
   sectionTitle: "div";
-  sectionDescription: "div";
-  screenShot20220131At2561: "div";
   frame127: "div";
   frame126: "div";
   frame169: "div";
@@ -2731,8 +2737,7 @@ type NodeDefaultElementType = {
   frame157: "div";
   rectangle82: "div";
   frame210: "div";
-  sectionTitle3: "div";
-  image50: "div";
+  infographic: "div";
   frame99: "div";
   frame97: "div";
   sectionTitle4: "div";
@@ -2755,7 +2760,7 @@ type NodeDefaultElementType = {
   frame132: "div";
   frame145: "div";
   sectionTitle8: "div";
-  image34: "div";
+  semantuIcon: "div";
   sectionTitle10: "div";
   sectionDescription19: "div";
   link: "a";
@@ -2828,9 +2833,8 @@ export const PlasmicHomepage = Object.assign(
     frame179: makeNodeComponent("frame179"),
     frame138: makeNodeComponent("frame138"),
     frame137: makeNodeComponent("frame137"),
+    lincdCodeExample: makeNodeComponent("lincdCodeExample"),
     sectionTitle: makeNodeComponent("sectionTitle"),
-    sectionDescription: makeNodeComponent("sectionDescription"),
-    screenShot20220131At2561: makeNodeComponent("screenShot20220131At2561"),
     frame127: makeNodeComponent("frame127"),
     frame126: makeNodeComponent("frame126"),
     frame169: makeNodeComponent("frame169"),
@@ -2938,8 +2942,7 @@ export const PlasmicHomepage = Object.assign(
     frame157: makeNodeComponent("frame157"),
     rectangle82: makeNodeComponent("rectangle82"),
     frame210: makeNodeComponent("frame210"),
-    sectionTitle3: makeNodeComponent("sectionTitle3"),
-    image50: makeNodeComponent("image50"),
+    infographic: makeNodeComponent("infographic"),
     frame99: makeNodeComponent("frame99"),
     frame97: makeNodeComponent("frame97"),
     sectionTitle4: makeNodeComponent("sectionTitle4"),
@@ -2962,7 +2965,7 @@ export const PlasmicHomepage = Object.assign(
     frame132: makeNodeComponent("frame132"),
     frame145: makeNodeComponent("frame145"),
     sectionTitle8: makeNodeComponent("sectionTitle8"),
-    image34: makeNodeComponent("image34"),
+    semantuIcon: makeNodeComponent("semantuIcon"),
     sectionTitle10: makeNodeComponent("sectionTitle10"),
     sectionDescription19: makeNodeComponent("sectionDescription19"),
     link: makeNodeComponent("link"),
