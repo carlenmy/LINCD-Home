@@ -13,6 +13,7 @@
 import * as React from "react";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -52,89 +53,41 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: p.Flex<"div">;
   home?: p.Flex<"div">;
-  frame141?: p.Flex<"div">;
+  hero?: p.Flex<"div">;
   frame140?: p.Flex<"div">;
   frame96?: p.Flex<"div">;
   heading?: p.Flex<"div">;
   title?: p.Flex<"div">;
-  description?: p.Flex<"div">;
+  description2?: p.Flex<"div">;
   frame179?: p.Flex<"div">;
-  frame138?: p.Flex<"div">;
+  lincd?: p.Flex<"div">;
   frame137?: p.Flex<"div">;
   lincdCodeExample?: p.Flex<"div">;
-  sectionTitle?: p.Flex<"div">;
-  frame127?: p.Flex<"div">;
+  sectionTitle3?: p.Flex<"div">;
+  span?: p.Flex<"span">;
+  theLibrary?: p.Flex<"div">;
   frame126?: p.Flex<"div">;
   frame169?: p.Flex<"div">;
   sectionTitle2?: p.Flex<"div">;
   rectangle79?: p.Flex<"div">;
   sectionDescription2?: p.Flex<"div">;
-  group151?: p.Flex<"div">;
-  frame178?: p.Flex<"div">;
-  frame180?: p.Flex<"div">;
-  frame166?: p.Flex<"div">;
-  _?: p.Flex<"div">;
-  _2?: p.Flex<"div">;
-  frame177?: p.Flex<"div">;
-  frame167?: p.Flex<"div">;
-  sectionDescription3?: p.Flex<"div">;
-  frame176?: p.Flex<"div">;
-  frame173?: p.Flex<"div">;
-  sectionDescription4?: p.Flex<"div">;
-  frame181?: p.Flex<"div">;
-  frame182?: p.Flex<"div">;
-  frame168?: p.Flex<"div">;
-  _3?: p.Flex<"div">;
-  _4?: p.Flex<"div">;
-  frame183?: p.Flex<"div">;
   frame170?: p.Flex<"div">;
   sectionDescription5?: p.Flex<"div">;
-  frame184?: p.Flex<"div">;
-  frame174?: p.Flex<"div">;
   sectionDescription6?: p.Flex<"div">;
-  frame185?: p.Flex<"div">;
-  frame186?: p.Flex<"div">;
   frame171?: p.Flex<"div">;
-  _5?: p.Flex<"div">;
-  _6?: p.Flex<"div">;
-  frame187?: p.Flex<"div">;
+  sectionDescription3?: p.Flex<"div">;
+  sectionDescription4?: p.Flex<"div">;
   frame172?: p.Flex<"div">;
   sectionDescription7?: p.Flex<"div">;
-  frame188?: p.Flex<"div">;
-  frame175?: p.Flex<"div">;
   sectionDescription8?: p.Flex<"div">;
-  frame189?: p.Flex<"div">;
-  frame190?: p.Flex<"div">;
-  frame191?: p.Flex<"div">;
-  _7?: p.Flex<"div">;
-  _8?: p.Flex<"div">;
-  frame192?: p.Flex<"div">;
-  frame193?: p.Flex<"div">;
+  frame173?: p.Flex<"div">;
   sectionDescription9?: p.Flex<"div">;
-  frame194?: p.Flex<"div">;
-  frame195?: p.Flex<"div">;
   sectionDescription10?: p.Flex<"div">;
-  frame196?: p.Flex<"div">;
-  frame197?: p.Flex<"div">;
-  frame198?: p.Flex<"div">;
-  _9?: p.Flex<"div">;
-  _10?: p.Flex<"div">;
-  frame199?: p.Flex<"div">;
-  frame200?: p.Flex<"div">;
+  frame174?: p.Flex<"div">;
   sectionDescription11?: p.Flex<"div">;
-  frame201?: p.Flex<"div">;
-  frame202?: p.Flex<"div">;
   sectionDescription12?: p.Flex<"div">;
-  frame203?: p.Flex<"div">;
-  frame204?: p.Flex<"div">;
-  frame205?: p.Flex<"div">;
-  _11?: p.Flex<"div">;
-  _12?: p.Flex<"div">;
-  frame206?: p.Flex<"div">;
-  frame207?: p.Flex<"div">;
+  frame175?: p.Flex<"div">;
   sectionDescription13?: p.Flex<"div">;
-  frame208?: p.Flex<"div">;
-  frame209?: p.Flex<"div">;
   sectionDescription14?: p.Flex<"div">;
   frame151?: p.Flex<"div">;
   frame153?: p.Flex<"div">;
@@ -159,7 +112,7 @@ export type PlasmicHomepage__OverridesType = {
   largeTagBase6?: p.Flex<"div">;
   frame155?: p.Flex<"div">;
   rectangle81?: p.Flex<"div">;
-  frame150?: p.Flex<"div">;
+  publish?: p.Flex<"div">;
   frame156?: p.Flex<"div">;
   tag7?: p.Flex<"div">;
   largeTagBase7?: p.Flex<"div">;
@@ -169,28 +122,27 @@ export type PlasmicHomepage__OverridesType = {
   largeTagBase9?: p.Flex<"div">;
   frame157?: p.Flex<"div">;
   rectangle82?: p.Flex<"div">;
-  frame210?: p.Flex<"div">;
   infographic?: p.Flex<"div">;
-  frame99?: p.Flex<"div">;
+  collaboration?: p.Flex<"div">;
   frame97?: p.Flex<"div">;
   sectionTitle4?: p.Flex<"div">;
   sectionDescription15?: p.Flex<"div">;
-  frame128?: p.Flex<"div">;
+  learnWeb4?: p.Flex<"div">;
   image52?: p.Flex<"div">;
-  frame129?: p.Flex<"div">;
-  sectionTitle5?: p.Flex<"div">;
+  learnWeb30?: p.Flex<"div">;
+  sectionTitle5?: p.Flex<"h2">;
   sectionDescription16?: p.Flex<"div">;
-  frame125?: p.Flex<"div">;
-  featureInfo?: p.Flex<"div">;
-  sectionTitle6?: p.Flex<"div">;
-  sectionDescription17?: p.Flex<"div">;
+  learnWeb5?: p.Flex<"div">;
   image22?: p.Flex<"div">;
-  frame130?: p.Flex<"div">;
-  image51?: p.Flex<"div">;
+  featureInfo?: p.Flex<"div">;
+  sectionTitle6?: p.Flex<"h2">;
+  sectionDescription17?: p.Flex<"div">;
+  learnWeb6?: p.Flex<"div">;
+  image53?: p.Flex<"div">;
   frame131?: p.Flex<"div">;
   sectionTitle7?: p.Flex<"div">;
   sectionDescription18?: p.Flex<"div">;
-  frame132?: p.Flex<"div">;
+  footer?: p.Flex<"div">;
   frame145?: p.Flex<"div">;
   sectionTitle8?: p.Flex<"div">;
   semantuIcon?: p.Flex<"div">;
@@ -233,20 +185,19 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.all,
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
+            projectcss.plasmic_tokens,
             sty.root
           )}
         >
-          <p.Stack
-            as={"div"}
+          <div
             data-plasmic-name={"home"}
             data-plasmic-override={overrides.home}
-            hasGap={true}
             className={classNames(projectcss.all, sty.home)}
           >
             <div
-              data-plasmic-name={"frame141"}
-              data-plasmic-override={overrides.frame141}
-              className={classNames(projectcss.all, sty.frame141)}
+              data-plasmic-name={"hero"}
+              data-plasmic-override={overrides.hero}
+              className={classNames(projectcss.all, sty.hero)}
             >
               <p.Stack
                 as={"div"}
@@ -293,16 +244,16 @@ function PlasmicHomepage__RenderFunc(props: {
                   </div>
 
                   <div
-                    data-plasmic-name={"description"}
-                    data-plasmic-override={overrides.description}
+                    data-plasmic-name={"description2"}
+                    data-plasmic-override={overrides.description2}
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.description
+                      sty.description2
                     )}
                   >
                     {
-                      "A Javascript library that employs the best data practices, speeds up your development, and aligns with Web 3.0."
+                      "Employ the best data practices, speed up your development, and align with Web 3.0"
                     }
                   </div>
                 </p.Stack>
@@ -326,10 +277,10 @@ function PlasmicHomepage__RenderFunc(props: {
 
             <p.Stack
               as={"div"}
-              data-plasmic-name={"frame138"}
-              data-plasmic-override={overrides.frame138}
+              data-plasmic-name={"lincd"}
+              data-plasmic-override={overrides.lincd}
               hasGap={true}
-              className={classNames(projectcss.all, sty.frame138)}
+              className={classNames(projectcss.all, sty.lincd)}
             >
               <p.Stack
                 as={"div"}
@@ -346,15 +297,55 @@ function PlasmicHomepage__RenderFunc(props: {
                 />
 
                 <div
-                  data-plasmic-name={"sectionTitle"}
-                  data-plasmic-override={overrides.sectionTitle}
+                  data-plasmic-name={"sectionTitle3"}
+                  data-plasmic-override={overrides.sectionTitle3}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.sectionTitle
+                    sty.sectionTitle3
                   )}
                 >
-                  {"LINCD "}
+                  {hasVariant(globalVariants, "screen", "mobileOnly") ? (
+                    <React.Fragment>
+                      <React.Fragment>{"LINCD\n"}</React.Fragment>
+                      <span
+                        data-plasmic-name={"span"}
+                        data-plasmic-override={overrides.span}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.span
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "(pronounced linked)"
+                          : "(pronounced linked)"}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment>
+                      <React.Fragment>{"LINCD "}</React.Fragment>
+                      <span
+                        data-plasmic-name={"span"}
+                        data-plasmic-override={overrides.span}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.span
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "(pronounced linked)"
+                          : "(pronounced linked)"}
+                      </span>
+                      <React.Fragment>{""}</React.Fragment>
+                    </React.Fragment>
+                  )}
                 </div>
 
                 <div
@@ -401,10 +392,10 @@ function PlasmicHomepage__RenderFunc(props: {
 
             <p.Stack
               as={"div"}
-              data-plasmic-name={"frame127"}
-              data-plasmic-override={overrides.frame127}
+              data-plasmic-name={"theLibrary"}
+              data-plasmic-override={overrides.theLibrary}
               hasGap={true}
-              className={classNames(projectcss.all, sty.frame127)}
+              className={classNames(projectcss.all, sty.theLibrary)}
             >
               <p.Stack
                 as={"div"}
@@ -437,623 +428,229 @@ function PlasmicHomepage__RenderFunc(props: {
                     data-plasmic-override={overrides.rectangle79}
                     className={classNames(projectcss.all, sty.rectangle79)}
                   />
-
-                  <div
-                    data-plasmic-name={"sectionDescription2"}
-                    data-plasmic-override={overrides.sectionDescription2}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.sectionDescription2
-                    )}
-                  >
-                    {
-                      "LINCD is a lightweight Javascript library that helps you to integrate data from different sources and build visualizations with ease. \nCreate and share code modules across different environments using W3C’s Linked Data standards."
-                    }
-                  </div>
                 </p.Stack>
 
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"group151"}
-                  data-plasmic-override={overrides.group151}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.group151)}
+                <div
+                  data-plasmic-name={"sectionDescription2"}
+                  data-plasmic-override={overrides.sectionDescription2}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.sectionDescription2
+                  )}
                 >
+                  {
+                    "LINCD is a lightweight Javascript library that helps you integrate data from different sources and build visualizations with ease. \nCreate and share code modules across different environments using W3C’s Linked Data standards."
+                  }
+                </div>
+
+                {true ? (
                   <p.Stack
                     as={"div"}
-                    data-plasmic-name={"frame178"}
-                    data-plasmic-override={overrides.frame178}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.frame178)}
+                    className={classNames(projectcss.all, sty.freeBox__tVSrN)}
                   >
                     <p.Stack
                       as={"div"}
-                      data-plasmic-name={"frame180"}
-                      data-plasmic-override={overrides.frame180}
+                      data-plasmic-name={"frame170"}
+                      data-plasmic-override={overrides.frame170}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.frame180)}
+                      className={classNames(projectcss.all, sty.frame170)}
                     >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame166"}
-                        data-plasmic-override={overrides.frame166}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame166)}
+                      <div
+                        data-plasmic-name={"sectionDescription5"}
+                        data-plasmic-override={overrides.sectionDescription5}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription5
+                        )}
                       >
-                        <div
-                          data-plasmic-name={"_"}
-                          data-plasmic-override={overrides._}
-                          className={classNames(projectcss.all, sty._)}
-                        >
-                          <div
-                            data-plasmic-name={"_2"}
-                            data-plasmic-override={overrides._2}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty._2
-                            )}
-                          >
-                            {"✅ "}
-                          </div>
-                        </div>
-                      </p.Stack>
+                        {"Connect "}
+                      </div>
+
+                      <div
+                        data-plasmic-name={"sectionDescription6"}
+                        data-plasmic-override={overrides.sectionDescription6}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription6
+                        )}
+                      >
+                        {"Databases and API’s as data sources"}
+                      </div>
                     </p.Stack>
 
                     <p.Stack
                       as={"div"}
-                      data-plasmic-name={"frame177"}
-                      data-plasmic-override={overrides.frame177}
+                      data-plasmic-name={"frame171"}
+                      data-plasmic-override={overrides.frame171}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.frame177)}
+                      className={classNames(projectcss.all, sty.frame171)}
                     >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame167"}
-                        data-plasmic-override={overrides.frame167}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame167)}
+                      <div
+                        data-plasmic-name={"sectionDescription3"}
+                        data-plasmic-override={overrides.sectionDescription3}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription3
+                        )}
                       >
-                        <div
-                          data-plasmic-name={"sectionDescription3"}
-                          data-plasmic-override={overrides.sectionDescription3}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription3
-                          )}
-                        >
-                          {"Convert"}
-                        </div>
-                      </p.Stack>
+                        {"Convert"}
+                      </div>
+
+                      <div
+                        data-plasmic-name={"sectionDescription4"}
+                        data-plasmic-override={overrides.sectionDescription4}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription4
+                        )}
+                      >
+                        {"Import & convert your data to Linked Data"}
+                      </div>
                     </p.Stack>
 
                     <p.Stack
                       as={"div"}
-                      data-plasmic-name={"frame176"}
-                      data-plasmic-override={overrides.frame176}
+                      data-plasmic-name={"frame172"}
+                      data-plasmic-override={overrides.frame172}
                       hasGap={true}
-                      className={classNames(projectcss.all, sty.frame176)}
+                      className={classNames(projectcss.all, sty.frame172)}
                     >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame173"}
-                        data-plasmic-override={overrides.frame173}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame173)}
+                      <div
+                        data-plasmic-name={"sectionDescription7"}
+                        data-plasmic-override={overrides.sectionDescription7}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription7
+                        )}
                       >
-                        <div
-                          data-plasmic-name={"sectionDescription4"}
-                          data-plasmic-override={overrides.sectionDescription4}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription4
-                          )}
-                        >
-                          {"Import & convert your data to Linked Data"}
-                        </div>
-                      </p.Stack>
+                        {"One graph"}
+                      </div>
+
+                      <div
+                        data-plasmic-name={"sectionDescription8"}
+                        data-plasmic-override={overrides.sectionDescription8}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription8
+                        )}
+                      >
+                        {
+                          "In memory graph database with accessible resource-centric API "
+                        }
+                      </div>
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"frame173"}
+                      data-plasmic-override={overrides.frame173}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.frame173)}
+                    >
+                      <div
+                        data-plasmic-name={"sectionDescription9"}
+                        data-plasmic-override={overrides.sectionDescription9}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription9
+                        )}
+                      >
+                        {"Apply"}
+                      </div>
+
+                      <div
+                        data-plasmic-name={"sectionDescription10"}
+                        data-plasmic-override={overrides.sectionDescription10}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription10
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "tablet")
+                          ? "Matching UI components and algorithms with ease"
+                          : "Matching UI components and algorithms with ease"}
+                      </div>
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"frame174"}
+                      data-plasmic-override={overrides.frame174}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.frame174)}
+                    >
+                      <div
+                        data-plasmic-name={"sectionDescription11"}
+                        data-plasmic-override={overrides.sectionDescription11}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription11
+                        )}
+                      >
+                        {"Update"}
+                      </div>
+
+                      <div
+                        data-plasmic-name={"sectionDescription12"}
+                        data-plasmic-override={overrides.sectionDescription12}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription12
+                        )}
+                      >
+                        {
+                          "When the graph changes, your components will automatically update "
+                        }
+                      </div>
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"frame175"}
+                      data-plasmic-override={overrides.frame175}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.frame175)}
+                    >
+                      <div
+                        data-plasmic-name={"sectionDescription13"}
+                        data-plasmic-override={overrides.sectionDescription13}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription13
+                        )}
+                      >
+                        {"Publish"}
+                      </div>
+
+                      <div
+                        data-plasmic-name={"sectionDescription14"}
+                        data-plasmic-override={overrides.sectionDescription14}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.sectionDescription14
+                        )}
+                      >
+                        {
+                          "Your UI Components, Methods & Algorithms to the LINCD repository"
+                        }
+                      </div>
                     </p.Stack>
                   </p.Stack>
-
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame181"}
-                    data-plasmic-override={overrides.frame181}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame181)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame182"}
-                      data-plasmic-override={overrides.frame182}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame182)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame168"}
-                        data-plasmic-override={overrides.frame168}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame168)}
-                      >
-                        <div
-                          data-plasmic-name={"_3"}
-                          data-plasmic-override={overrides._3}
-                          className={classNames(projectcss.all, sty._3)}
-                        >
-                          <div
-                            data-plasmic-name={"_4"}
-                            data-plasmic-override={overrides._4}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty._4
-                            )}
-                          >
-                            {"✅ "}
-                          </div>
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame183"}
-                      data-plasmic-override={overrides.frame183}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame183)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame170"}
-                        data-plasmic-override={overrides.frame170}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame170)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription5"}
-                          data-plasmic-override={overrides.sectionDescription5}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription5
-                          )}
-                        >
-                          {"Connect "}
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame184"}
-                      data-plasmic-override={overrides.frame184}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame184)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame174"}
-                        data-plasmic-override={overrides.frame174}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame174)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription6"}
-                          data-plasmic-override={overrides.sectionDescription6}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription6
-                          )}
-                        >
-                          {"Databases and API’s as data sources"}
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-                  </p.Stack>
-
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame185"}
-                    data-plasmic-override={overrides.frame185}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame185)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame186"}
-                      data-plasmic-override={overrides.frame186}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame186)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame171"}
-                        data-plasmic-override={overrides.frame171}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame171)}
-                      >
-                        <div
-                          data-plasmic-name={"_5"}
-                          data-plasmic-override={overrides._5}
-                          className={classNames(projectcss.all, sty._5)}
-                        >
-                          <div
-                            data-plasmic-name={"_6"}
-                            data-plasmic-override={overrides._6}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty._6
-                            )}
-                          >
-                            {"✅ "}
-                          </div>
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame187"}
-                      data-plasmic-override={overrides.frame187}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame187)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame172"}
-                        data-plasmic-override={overrides.frame172}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame172)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription7"}
-                          data-plasmic-override={overrides.sectionDescription7}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription7
-                          )}
-                        >
-                          {"One graph"}
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame188"}
-                      data-plasmic-override={overrides.frame188}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame188)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame175"}
-                        data-plasmic-override={overrides.frame175}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame175)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription8"}
-                          data-plasmic-override={overrides.sectionDescription8}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription8
-                          )}
-                        >
-                          {
-                            "In memory graph database with accessible resource-centric API "
-                          }
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-                  </p.Stack>
-
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame189"}
-                    data-plasmic-override={overrides.frame189}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame189)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame190"}
-                      data-plasmic-override={overrides.frame190}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame190)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame191"}
-                        data-plasmic-override={overrides.frame191}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame191)}
-                      >
-                        <div
-                          data-plasmic-name={"_7"}
-                          data-plasmic-override={overrides._7}
-                          className={classNames(projectcss.all, sty._7)}
-                        >
-                          <div
-                            data-plasmic-name={"_8"}
-                            data-plasmic-override={overrides._8}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty._8
-                            )}
-                          >
-                            {"✅ "}
-                          </div>
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame192"}
-                      data-plasmic-override={overrides.frame192}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame192)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame193"}
-                        data-plasmic-override={overrides.frame193}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame193)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription9"}
-                          data-plasmic-override={overrides.sectionDescription9}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription9
-                          )}
-                        >
-                          {"Apply"}
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame194"}
-                      data-plasmic-override={overrides.frame194}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame194)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame195"}
-                        data-plasmic-override={overrides.frame195}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame195)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription10"}
-                          data-plasmic-override={overrides.sectionDescription10}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription10
-                          )}
-                        >
-                          {"Matching UI components and algorithms with ease"}
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-                  </p.Stack>
-
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame196"}
-                    data-plasmic-override={overrides.frame196}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame196)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame197"}
-                      data-plasmic-override={overrides.frame197}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame197)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame198"}
-                        data-plasmic-override={overrides.frame198}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame198)}
-                      >
-                        <div
-                          data-plasmic-name={"_9"}
-                          data-plasmic-override={overrides._9}
-                          className={classNames(projectcss.all, sty._9)}
-                        >
-                          <div
-                            data-plasmic-name={"_10"}
-                            data-plasmic-override={overrides._10}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty._10
-                            )}
-                          >
-                            {"✅ "}
-                          </div>
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame199"}
-                      data-plasmic-override={overrides.frame199}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame199)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame200"}
-                        data-plasmic-override={overrides.frame200}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame200)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription11"}
-                          data-plasmic-override={overrides.sectionDescription11}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription11
-                          )}
-                        >
-                          {"Update"}
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame201"}
-                      data-plasmic-override={overrides.frame201}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame201)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame202"}
-                        data-plasmic-override={overrides.frame202}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame202)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription12"}
-                          data-plasmic-override={overrides.sectionDescription12}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription12
-                          )}
-                        >
-                          {
-                            "When the graph changes, your components will automatically update "
-                          }
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-                  </p.Stack>
-
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame203"}
-                    data-plasmic-override={overrides.frame203}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame203)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame204"}
-                      data-plasmic-override={overrides.frame204}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame204)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame205"}
-                        data-plasmic-override={overrides.frame205}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame205)}
-                      >
-                        <div
-                          data-plasmic-name={"_11"}
-                          data-plasmic-override={overrides._11}
-                          className={classNames(projectcss.all, sty._11)}
-                        >
-                          <div
-                            data-plasmic-name={"_12"}
-                            data-plasmic-override={overrides._12}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty._12
-                            )}
-                          >
-                            {"✅ "}
-                          </div>
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame206"}
-                      data-plasmic-override={overrides.frame206}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame206)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame207"}
-                        data-plasmic-override={overrides.frame207}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame207)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription13"}
-                          data-plasmic-override={overrides.sectionDescription13}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription13
-                          )}
-                        >
-                          {"Publish"}
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame208"}
-                      data-plasmic-override={overrides.frame208}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame208)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame209"}
-                        data-plasmic-override={overrides.frame209}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame209)}
-                      >
-                        <div
-                          data-plasmic-name={"sectionDescription14"}
-                          data-plasmic-override={overrides.sectionDescription14}
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.sectionDescription14
-                          )}
-                        >
-                          {
-                            "Your UI Components, Methods & Algorithms to the LINCD repository"
-                          }
-                        </div>
-                      </p.Stack>
-                    </p.Stack>
-                  </p.Stack>
-                </p.Stack>
+                ) : null}
 
                 <p.Stack
                   as={"div"}
@@ -1286,10 +883,10 @@ function PlasmicHomepage__RenderFunc(props: {
 
                   <p.Stack
                     as={"div"}
-                    data-plasmic-name={"frame150"}
-                    data-plasmic-override={overrides.frame150}
+                    data-plasmic-name={"publish"}
+                    data-plasmic-override={overrides.publish}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.frame150)}
+                    className={classNames(projectcss.all, sty.publish)}
                   >
                     <div
                       className={classNames(
@@ -1389,6 +986,17 @@ function PlasmicHomepage__RenderFunc(props: {
                   ) : null}
                 </p.Stack>
 
+                <div
+                  data-plasmic-name={"infographic"}
+                  data-plasmic-override={overrides.infographic}
+                  alt={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? ("LINCD library infographic Vertical aligned" as const)
+                      : ("LINCD library infographic" as const)
+                  }
+                  className={classNames(projectcss.all, sty.infographic)}
+                />
+
                 <CtaButtonHomePage
                   className={classNames(
                     "__wab_instance",
@@ -1400,25 +1008,10 @@ function PlasmicHomepage__RenderFunc(props: {
 
             <p.Stack
               as={"div"}
-              data-plasmic-name={"frame210"}
-              data-plasmic-override={overrides.frame210}
+              data-plasmic-name={"collaboration"}
+              data-plasmic-override={overrides.collaboration}
               hasGap={true}
-              className={classNames(projectcss.all, sty.frame210)}
-            >
-              <div
-                data-plasmic-name={"infographic"}
-                data-plasmic-override={overrides.infographic}
-                alt={"LINCD library infographic" as const}
-                className={classNames(projectcss.all, sty.infographic)}
-              />
-            </p.Stack>
-
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame99"}
-              data-plasmic-override={overrides.frame99}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame99)}
+              className={classNames(projectcss.all, sty.collaboration)}
             >
               <p.Stack
                 as={"div"}
@@ -1436,7 +1029,9 @@ function PlasmicHomepage__RenderFunc(props: {
                     sty.sectionTitle4
                   )}
                 >
-                  {"Reimagining what it means to collaborate"}
+                  {hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "Reimagining what it means to collaborate"
+                    : "Reimagining what it means to collaborate"}
                 </div>
 
                 <div
@@ -1455,168 +1050,182 @@ function PlasmicHomepage__RenderFunc(props: {
               </p.Stack>
             </p.Stack>
 
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame128"}
-              data-plasmic-override={overrides.frame128}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame128)}
-            >
-              <div
-                data-plasmic-name={"image52"}
-                data-plasmic-override={overrides.image52}
-                alt={"LINCD academy community call" as const}
-                className={classNames(projectcss.all, sty.image52)}
-              />
-
+            {true ? (
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"frame129"}
-                data-plasmic-override={overrides.frame129}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.frame129)}
+                className={classNames(projectcss.all, sty.freeBox__nvU9C)}
               >
-                <div
-                  data-plasmic-name={"sectionTitle5"}
-                  data-plasmic-override={overrides.sectionTitle5}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.sectionTitle5
-                  )}
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"learnWeb4"}
+                  data-plasmic-override={overrides.learnWeb4}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.learnWeb4)}
                 >
-                  {"Learn more about Web 3.0"}
-                </div>
+                  <div
+                    data-plasmic-name={"image52"}
+                    data-plasmic-override={overrides.image52}
+                    alt={"LINCD academy community call" as const}
+                    className={classNames(projectcss.all, sty.image52)}
+                  />
 
-                <div
-                  data-plasmic-name={"sectionDescription16"}
-                  data-plasmic-override={overrides.sectionDescription16}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.sectionDescription16
-                  )}
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"learnWeb30"}
+                    data-plasmic-override={overrides.learnWeb30}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.learnWeb30)}
+                  >
+                    <h2
+                      data-plasmic-name={"sectionTitle5"}
+                      data-plasmic-override={overrides.sectionTitle5}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.sectionTitle5
+                      )}
+                    >
+                      {"Learn more about Web 3.0"}
+                    </h2>
+
+                    <div
+                      data-plasmic-name={"sectionDescription16"}
+                      data-plasmic-override={overrides.sectionDescription16}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.sectionDescription16
+                      )}
+                    >
+                      {
+                        "Join our academy and attend bi-monthly courses covering topics around LINCD web, Web 3.0, and Linked Data."
+                      }
+                    </div>
+                  </p.Stack>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"learnWeb5"}
+                  data-plasmic-override={overrides.learnWeb5}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.learnWeb5)}
                 >
-                  {
-                    "Join our bi-monthly courses on new Web 3.0 and Linked Data."
-                  }
-                </div>
+                  <div
+                    data-plasmic-name={"image22"}
+                    data-plasmic-override={overrides.image22}
+                    alt={"Graph of LINCD community members" as const}
+                    className={classNames(projectcss.all, sty.image22)}
+                  />
 
-                <CtaButtonHomePage
-                  className={classNames(
-                    "__wab_instance",
-                    sty.ctaButtonHomePage__hxKz4
-                  )}
-                />
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"featureInfo"}
+                    data-plasmic-override={overrides.featureInfo}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.featureInfo)}
+                  >
+                    <h2
+                      data-plasmic-name={"sectionTitle6"}
+                      data-plasmic-override={overrides.sectionTitle6}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h2,
+                        projectcss.__wab_text,
+                        sty.sectionTitle6
+                      )}
+                    >
+                      {"Engage with LINCD developers"}
+                    </h2>
+
+                    <div
+                      data-plasmic-name={"sectionDescription17"}
+                      data-plasmic-override={overrides.sectionDescription17}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.sectionDescription17
+                      )}
+                    >
+                      {
+                        "You can join our community of data scientists, knowledge experts, and developers who are dedicated to making application building better for everyone."
+                      }
+                    </div>
+                  </p.Stack>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"learnWeb6"}
+                  data-plasmic-override={overrides.learnWeb6}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.learnWeb6)}
+                >
+                  <div
+                    data-plasmic-name={"image53"}
+                    data-plasmic-override={overrides.image53}
+                    alt={"LINCD academy community call" as const}
+                    className={classNames(projectcss.all, sty.image53)}
+                  />
+
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"frame131"}
+                    data-plasmic-override={overrides.frame131}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.frame131)}
+                  >
+                    <div
+                      data-plasmic-name={"sectionTitle7"}
+                      data-plasmic-override={overrides.sectionTitle7}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.sectionTitle7
+                      )}
+                    >
+                      {"Build & Earn"}
+                    </div>
+
+                    <div
+                      data-plasmic-name={"sectionDescription18"}
+                      data-plasmic-override={overrides.sectionDescription18}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.sectionDescription18
+                      )}
+                    >
+                      {
+                        "We are looking for developers who demonstrate leadership, clean code, and creativity. Get access to the bounty pool and solve complex real world problems. "
+                      }
+                    </div>
+                  </p.Stack>
+                </p.Stack>
+
+                {true ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__it6Uc)}
+                  >
+                    <CtaButtonHomePage
+                      className={classNames(
+                        "__wab_instance",
+                        sty.ctaButtonHomePage__hxKz4
+                      )}
+                    />
+                  </div>
+                ) : null}
               </p.Stack>
-            </p.Stack>
+            ) : null}
 
             <p.Stack
               as={"div"}
-              data-plasmic-name={"frame125"}
-              data-plasmic-override={overrides.frame125}
+              data-plasmic-name={"footer"}
+              data-plasmic-override={overrides.footer}
               hasGap={true}
-              className={classNames(projectcss.all, sty.frame125)}
-            >
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"featureInfo"}
-                data-plasmic-override={overrides.featureInfo}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.featureInfo)}
-              >
-                <div
-                  data-plasmic-name={"sectionTitle6"}
-                  data-plasmic-override={overrides.sectionTitle6}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.sectionTitle6
-                  )}
-                >
-                  {"Engage with LINCD developers"}
-                </div>
-
-                <div
-                  data-plasmic-name={"sectionDescription17"}
-                  data-plasmic-override={overrides.sectionDescription17}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.sectionDescription17
-                  )}
-                >
-                  {
-                    "You can join our community of data scientists, knowledge experts, and developers who are dedicated to making the world of data and application building a better place."
-                  }
-                </div>
-              </p.Stack>
-
-              <div
-                data-plasmic-name={"image22"}
-                data-plasmic-override={overrides.image22}
-                alt={"Graph of LINCD community members" as const}
-                className={classNames(projectcss.all, sty.image22)}
-              />
-            </p.Stack>
-
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame130"}
-              data-plasmic-override={overrides.frame130}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame130)}
-            >
-              <div
-                data-plasmic-name={"image51"}
-                data-plasmic-override={overrides.image51}
-                alt={
-                  "Example of LINCD developer claiming a bounty reward" as const
-                }
-                className={classNames(projectcss.all, sty.image51)}
-              />
-
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame131"}
-                data-plasmic-override={overrides.frame131}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame131)}
-              >
-                <div
-                  data-plasmic-name={"sectionTitle7"}
-                  data-plasmic-override={overrides.sectionTitle7}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.sectionTitle7
-                  )}
-                >
-                  {"Build & Earn"}
-                </div>
-
-                <div
-                  data-plasmic-name={"sectionDescription18"}
-                  data-plasmic-override={overrides.sectionDescription18}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.sectionDescription18
-                  )}
-                >
-                  {
-                    "We are looking for developers who demonstrate leadership, clean code, and creativity by engaging with the community. Get access to the bounty pool and solve complex real world problems. "
-                  }
-                </div>
-              </p.Stack>
-            </p.Stack>
-
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame132"}
-              data-plasmic-override={overrides.frame132}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame132)}
+              className={classNames(projectcss.all, sty.footer)}
             >
               <p.Stack
                 as={"div"}
@@ -1690,7 +1299,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 </React.Fragment>
               </div>
             </p.Stack>
-          </p.Stack>
+          </div>
         </p.Stack>
       </div>
     </React.Fragment>
@@ -1701,89 +1310,41 @@ const PlasmicDescendants = {
   root: [
     "root",
     "home",
-    "frame141",
+    "hero",
     "frame140",
     "frame96",
     "heading",
     "title",
-    "description",
+    "description2",
     "frame179",
-    "frame138",
+    "lincd",
     "frame137",
     "lincdCodeExample",
-    "sectionTitle",
-    "frame127",
+    "sectionTitle3",
+    "span",
+    "theLibrary",
     "frame126",
     "frame169",
     "sectionTitle2",
     "rectangle79",
     "sectionDescription2",
-    "group151",
-    "frame178",
-    "frame180",
-    "frame166",
-    "_",
-    "_2",
-    "frame177",
-    "frame167",
-    "sectionDescription3",
-    "frame176",
-    "frame173",
-    "sectionDescription4",
-    "frame181",
-    "frame182",
-    "frame168",
-    "_3",
-    "_4",
-    "frame183",
     "frame170",
     "sectionDescription5",
-    "frame184",
-    "frame174",
     "sectionDescription6",
-    "frame185",
-    "frame186",
     "frame171",
-    "_5",
-    "_6",
-    "frame187",
+    "sectionDescription3",
+    "sectionDescription4",
     "frame172",
     "sectionDescription7",
-    "frame188",
-    "frame175",
     "sectionDescription8",
-    "frame189",
-    "frame190",
-    "frame191",
-    "_7",
-    "_8",
-    "frame192",
-    "frame193",
+    "frame173",
     "sectionDescription9",
-    "frame194",
-    "frame195",
     "sectionDescription10",
-    "frame196",
-    "frame197",
-    "frame198",
-    "_9",
-    "_10",
-    "frame199",
-    "frame200",
+    "frame174",
     "sectionDescription11",
-    "frame201",
-    "frame202",
     "sectionDescription12",
-    "frame203",
-    "frame204",
-    "frame205",
-    "_11",
-    "_12",
-    "frame206",
-    "frame207",
+    "frame175",
     "sectionDescription13",
-    "frame208",
-    "frame209",
     "sectionDescription14",
     "frame151",
     "frame153",
@@ -1808,7 +1369,7 @@ const PlasmicDescendants = {
     "largeTagBase6",
     "frame155",
     "rectangle81",
-    "frame150",
+    "publish",
     "frame156",
     "tag7",
     "largeTagBase7",
@@ -1818,28 +1379,27 @@ const PlasmicDescendants = {
     "largeTagBase9",
     "frame157",
     "rectangle82",
-    "frame210",
     "infographic",
-    "frame99",
+    "collaboration",
     "frame97",
     "sectionTitle4",
     "sectionDescription15",
-    "frame128",
+    "learnWeb4",
     "image52",
-    "frame129",
+    "learnWeb30",
     "sectionTitle5",
     "sectionDescription16",
-    "frame125",
+    "learnWeb5",
+    "image22",
     "featureInfo",
     "sectionTitle6",
     "sectionDescription17",
-    "image22",
-    "frame130",
-    "image51",
+    "learnWeb6",
+    "image53",
     "frame131",
     "sectionTitle7",
     "sectionDescription18",
-    "frame132",
+    "footer",
     "frame145",
     "sectionTitle8",
     "semantuIcon",
@@ -1849,89 +1409,41 @@ const PlasmicDescendants = {
   ],
   home: [
     "home",
-    "frame141",
+    "hero",
     "frame140",
     "frame96",
     "heading",
     "title",
-    "description",
+    "description2",
     "frame179",
-    "frame138",
+    "lincd",
     "frame137",
     "lincdCodeExample",
-    "sectionTitle",
-    "frame127",
+    "sectionTitle3",
+    "span",
+    "theLibrary",
     "frame126",
     "frame169",
     "sectionTitle2",
     "rectangle79",
     "sectionDescription2",
-    "group151",
-    "frame178",
-    "frame180",
-    "frame166",
-    "_",
-    "_2",
-    "frame177",
-    "frame167",
-    "sectionDescription3",
-    "frame176",
-    "frame173",
-    "sectionDescription4",
-    "frame181",
-    "frame182",
-    "frame168",
-    "_3",
-    "_4",
-    "frame183",
     "frame170",
     "sectionDescription5",
-    "frame184",
-    "frame174",
     "sectionDescription6",
-    "frame185",
-    "frame186",
     "frame171",
-    "_5",
-    "_6",
-    "frame187",
+    "sectionDescription3",
+    "sectionDescription4",
     "frame172",
     "sectionDescription7",
-    "frame188",
-    "frame175",
     "sectionDescription8",
-    "frame189",
-    "frame190",
-    "frame191",
-    "_7",
-    "_8",
-    "frame192",
-    "frame193",
+    "frame173",
     "sectionDescription9",
-    "frame194",
-    "frame195",
     "sectionDescription10",
-    "frame196",
-    "frame197",
-    "frame198",
-    "_9",
-    "_10",
-    "frame199",
-    "frame200",
+    "frame174",
     "sectionDescription11",
-    "frame201",
-    "frame202",
     "sectionDescription12",
-    "frame203",
-    "frame204",
-    "frame205",
-    "_11",
-    "_12",
-    "frame206",
-    "frame207",
+    "frame175",
     "sectionDescription13",
-    "frame208",
-    "frame209",
     "sectionDescription14",
     "frame151",
     "frame153",
@@ -1956,7 +1468,7 @@ const PlasmicDescendants = {
     "largeTagBase6",
     "frame155",
     "rectangle81",
-    "frame150",
+    "publish",
     "frame156",
     "tag7",
     "largeTagBase7",
@@ -1966,28 +1478,27 @@ const PlasmicDescendants = {
     "largeTagBase9",
     "frame157",
     "rectangle82",
-    "frame210",
     "infographic",
-    "frame99",
+    "collaboration",
     "frame97",
     "sectionTitle4",
     "sectionDescription15",
-    "frame128",
+    "learnWeb4",
     "image52",
-    "frame129",
+    "learnWeb30",
     "sectionTitle5",
     "sectionDescription16",
-    "frame125",
+    "learnWeb5",
+    "image22",
     "featureInfo",
     "sectionTitle6",
     "sectionDescription17",
-    "image22",
-    "frame130",
-    "image51",
+    "learnWeb6",
+    "image53",
     "frame131",
     "sectionTitle7",
     "sectionDescription18",
-    "frame132",
+    "footer",
     "frame145",
     "sectionTitle8",
     "semantuIcon",
@@ -1995,98 +1506,50 @@ const PlasmicDescendants = {
     "sectionDescription19",
     "link"
   ],
-  frame141: [
-    "frame141",
+  hero: [
+    "hero",
     "frame140",
     "frame96",
     "heading",
     "title",
-    "description",
+    "description2",
     "frame179"
   ],
   frame140: ["frame140"],
-  frame96: ["frame96", "heading", "title", "description", "frame179"],
-  heading: ["heading", "title", "description"],
+  frame96: ["frame96", "heading", "title", "description2", "frame179"],
+  heading: ["heading", "title", "description2"],
   title: ["title"],
-  description: ["description"],
+  description2: ["description2"],
   frame179: ["frame179"],
-  frame138: ["frame138", "frame137", "lincdCodeExample", "sectionTitle"],
-  frame137: ["frame137", "lincdCodeExample", "sectionTitle"],
+  lincd: ["lincd", "frame137", "lincdCodeExample", "sectionTitle3", "span"],
+  frame137: ["frame137", "lincdCodeExample", "sectionTitle3", "span"],
   lincdCodeExample: ["lincdCodeExample"],
-  sectionTitle: ["sectionTitle"],
-  frame127: [
-    "frame127",
+  sectionTitle3: ["sectionTitle3", "span"],
+  span: ["span"],
+  theLibrary: [
+    "theLibrary",
     "frame126",
     "frame169",
     "sectionTitle2",
     "rectangle79",
     "sectionDescription2",
-    "group151",
-    "frame178",
-    "frame180",
-    "frame166",
-    "_",
-    "_2",
-    "frame177",
-    "frame167",
-    "sectionDescription3",
-    "frame176",
-    "frame173",
-    "sectionDescription4",
-    "frame181",
-    "frame182",
-    "frame168",
-    "_3",
-    "_4",
-    "frame183",
     "frame170",
     "sectionDescription5",
-    "frame184",
-    "frame174",
     "sectionDescription6",
-    "frame185",
-    "frame186",
     "frame171",
-    "_5",
-    "_6",
-    "frame187",
+    "sectionDescription3",
+    "sectionDescription4",
     "frame172",
     "sectionDescription7",
-    "frame188",
-    "frame175",
     "sectionDescription8",
-    "frame189",
-    "frame190",
-    "frame191",
-    "_7",
-    "_8",
-    "frame192",
-    "frame193",
+    "frame173",
     "sectionDescription9",
-    "frame194",
-    "frame195",
     "sectionDescription10",
-    "frame196",
-    "frame197",
-    "frame198",
-    "_9",
-    "_10",
-    "frame199",
-    "frame200",
+    "frame174",
     "sectionDescription11",
-    "frame201",
-    "frame202",
     "sectionDescription12",
-    "frame203",
-    "frame204",
-    "frame205",
-    "_11",
-    "_12",
-    "frame206",
-    "frame207",
+    "frame175",
     "sectionDescription13",
-    "frame208",
-    "frame209",
     "sectionDescription14",
     "frame151",
     "frame153",
@@ -2111,7 +1574,7 @@ const PlasmicDescendants = {
     "largeTagBase6",
     "frame155",
     "rectangle81",
-    "frame150",
+    "publish",
     "frame156",
     "tag7",
     "largeTagBase7",
@@ -2120,7 +1583,8 @@ const PlasmicDescendants = {
     "tag9",
     "largeTagBase9",
     "frame157",
-    "rectangle82"
+    "rectangle82",
+    "infographic"
   ],
   frame126: [
     "frame126",
@@ -2128,72 +1592,23 @@ const PlasmicDescendants = {
     "sectionTitle2",
     "rectangle79",
     "sectionDescription2",
-    "group151",
-    "frame178",
-    "frame180",
-    "frame166",
-    "_",
-    "_2",
-    "frame177",
-    "frame167",
-    "sectionDescription3",
-    "frame176",
-    "frame173",
-    "sectionDescription4",
-    "frame181",
-    "frame182",
-    "frame168",
-    "_3",
-    "_4",
-    "frame183",
     "frame170",
     "sectionDescription5",
-    "frame184",
-    "frame174",
     "sectionDescription6",
-    "frame185",
-    "frame186",
     "frame171",
-    "_5",
-    "_6",
-    "frame187",
+    "sectionDescription3",
+    "sectionDescription4",
     "frame172",
     "sectionDescription7",
-    "frame188",
-    "frame175",
     "sectionDescription8",
-    "frame189",
-    "frame190",
-    "frame191",
-    "_7",
-    "_8",
-    "frame192",
-    "frame193",
+    "frame173",
     "sectionDescription9",
-    "frame194",
-    "frame195",
     "sectionDescription10",
-    "frame196",
-    "frame197",
-    "frame198",
-    "_9",
-    "_10",
-    "frame199",
-    "frame200",
+    "frame174",
     "sectionDescription11",
-    "frame201",
-    "frame202",
     "sectionDescription12",
-    "frame203",
-    "frame204",
-    "frame205",
-    "_11",
-    "_12",
-    "frame206",
-    "frame207",
+    "frame175",
     "sectionDescription13",
-    "frame208",
-    "frame209",
     "sectionDescription14",
     "frame151",
     "frame153",
@@ -2218,7 +1633,7 @@ const PlasmicDescendants = {
     "largeTagBase6",
     "frame155",
     "rectangle81",
-    "frame150",
+    "publish",
     "frame156",
     "tag7",
     "largeTagBase7",
@@ -2227,218 +1642,30 @@ const PlasmicDescendants = {
     "tag9",
     "largeTagBase9",
     "frame157",
-    "rectangle82"
+    "rectangle82",
+    "infographic"
   ],
-  frame169: ["frame169", "sectionTitle2", "rectangle79", "sectionDescription2"],
+  frame169: ["frame169", "sectionTitle2", "rectangle79"],
   sectionTitle2: ["sectionTitle2"],
   rectangle79: ["rectangle79"],
   sectionDescription2: ["sectionDescription2"],
-  group151: [
-    "group151",
-    "frame178",
-    "frame180",
-    "frame166",
-    "_",
-    "_2",
-    "frame177",
-    "frame167",
-    "sectionDescription3",
-    "frame176",
-    "frame173",
-    "sectionDescription4",
-    "frame181",
-    "frame182",
-    "frame168",
-    "_3",
-    "_4",
-    "frame183",
-    "frame170",
-    "sectionDescription5",
-    "frame184",
-    "frame174",
-    "sectionDescription6",
-    "frame185",
-    "frame186",
-    "frame171",
-    "_5",
-    "_6",
-    "frame187",
-    "frame172",
-    "sectionDescription7",
-    "frame188",
-    "frame175",
-    "sectionDescription8",
-    "frame189",
-    "frame190",
-    "frame191",
-    "_7",
-    "_8",
-    "frame192",
-    "frame193",
-    "sectionDescription9",
-    "frame194",
-    "frame195",
-    "sectionDescription10",
-    "frame196",
-    "frame197",
-    "frame198",
-    "_9",
-    "_10",
-    "frame199",
-    "frame200",
-    "sectionDescription11",
-    "frame201",
-    "frame202",
-    "sectionDescription12",
-    "frame203",
-    "frame204",
-    "frame205",
-    "_11",
-    "_12",
-    "frame206",
-    "frame207",
-    "sectionDescription13",
-    "frame208",
-    "frame209",
-    "sectionDescription14"
-  ],
-  frame178: [
-    "frame178",
-    "frame180",
-    "frame166",
-    "_",
-    "_2",
-    "frame177",
-    "frame167",
-    "sectionDescription3",
-    "frame176",
-    "frame173",
-    "sectionDescription4"
-  ],
-  frame180: ["frame180", "frame166", "_", "_2"],
-  frame166: ["frame166", "_", "_2"],
-  _: ["_", "_2"],
-  _2: ["_2"],
-  frame177: ["frame177", "frame167", "sectionDescription3"],
-  frame167: ["frame167", "sectionDescription3"],
-  sectionDescription3: ["sectionDescription3"],
-  frame176: ["frame176", "frame173", "sectionDescription4"],
-  frame173: ["frame173", "sectionDescription4"],
-  sectionDescription4: ["sectionDescription4"],
-  frame181: [
-    "frame181",
-    "frame182",
-    "frame168",
-    "_3",
-    "_4",
-    "frame183",
-    "frame170",
-    "sectionDescription5",
-    "frame184",
-    "frame174",
-    "sectionDescription6"
-  ],
-  frame182: ["frame182", "frame168", "_3", "_4"],
-  frame168: ["frame168", "_3", "_4"],
-  _3: ["_3", "_4"],
-  _4: ["_4"],
-  frame183: ["frame183", "frame170", "sectionDescription5"],
-  frame170: ["frame170", "sectionDescription5"],
+  frame170: ["frame170", "sectionDescription5", "sectionDescription6"],
   sectionDescription5: ["sectionDescription5"],
-  frame184: ["frame184", "frame174", "sectionDescription6"],
-  frame174: ["frame174", "sectionDescription6"],
   sectionDescription6: ["sectionDescription6"],
-  frame185: [
-    "frame185",
-    "frame186",
-    "frame171",
-    "_5",
-    "_6",
-    "frame187",
-    "frame172",
-    "sectionDescription7",
-    "frame188",
-    "frame175",
-    "sectionDescription8"
-  ],
-  frame186: ["frame186", "frame171", "_5", "_6"],
-  frame171: ["frame171", "_5", "_6"],
-  _5: ["_5", "_6"],
-  _6: ["_6"],
-  frame187: ["frame187", "frame172", "sectionDescription7"],
-  frame172: ["frame172", "sectionDescription7"],
+  frame171: ["frame171", "sectionDescription3", "sectionDescription4"],
+  sectionDescription3: ["sectionDescription3"],
+  sectionDescription4: ["sectionDescription4"],
+  frame172: ["frame172", "sectionDescription7", "sectionDescription8"],
   sectionDescription7: ["sectionDescription7"],
-  frame188: ["frame188", "frame175", "sectionDescription8"],
-  frame175: ["frame175", "sectionDescription8"],
   sectionDescription8: ["sectionDescription8"],
-  frame189: [
-    "frame189",
-    "frame190",
-    "frame191",
-    "_7",
-    "_8",
-    "frame192",
-    "frame193",
-    "sectionDescription9",
-    "frame194",
-    "frame195",
-    "sectionDescription10"
-  ],
-  frame190: ["frame190", "frame191", "_7", "_8"],
-  frame191: ["frame191", "_7", "_8"],
-  _7: ["_7", "_8"],
-  _8: ["_8"],
-  frame192: ["frame192", "frame193", "sectionDescription9"],
-  frame193: ["frame193", "sectionDescription9"],
+  frame173: ["frame173", "sectionDescription9", "sectionDescription10"],
   sectionDescription9: ["sectionDescription9"],
-  frame194: ["frame194", "frame195", "sectionDescription10"],
-  frame195: ["frame195", "sectionDescription10"],
   sectionDescription10: ["sectionDescription10"],
-  frame196: [
-    "frame196",
-    "frame197",
-    "frame198",
-    "_9",
-    "_10",
-    "frame199",
-    "frame200",
-    "sectionDescription11",
-    "frame201",
-    "frame202",
-    "sectionDescription12"
-  ],
-  frame197: ["frame197", "frame198", "_9", "_10"],
-  frame198: ["frame198", "_9", "_10"],
-  _9: ["_9", "_10"],
-  _10: ["_10"],
-  frame199: ["frame199", "frame200", "sectionDescription11"],
-  frame200: ["frame200", "sectionDescription11"],
+  frame174: ["frame174", "sectionDescription11", "sectionDescription12"],
   sectionDescription11: ["sectionDescription11"],
-  frame201: ["frame201", "frame202", "sectionDescription12"],
-  frame202: ["frame202", "sectionDescription12"],
   sectionDescription12: ["sectionDescription12"],
-  frame203: [
-    "frame203",
-    "frame204",
-    "frame205",
-    "_11",
-    "_12",
-    "frame206",
-    "frame207",
-    "sectionDescription13",
-    "frame208",
-    "frame209",
-    "sectionDescription14"
-  ],
-  frame204: ["frame204", "frame205", "_11", "_12"],
-  frame205: ["frame205", "_11", "_12"],
-  _11: ["_11", "_12"],
-  _12: ["_12"],
-  frame206: ["frame206", "frame207", "sectionDescription13"],
-  frame207: ["frame207", "sectionDescription13"],
+  frame175: ["frame175", "sectionDescription13", "sectionDescription14"],
   sectionDescription13: ["sectionDescription13"],
-  frame208: ["frame208", "frame209", "sectionDescription14"],
-  frame209: ["frame209", "sectionDescription14"],
   sectionDescription14: ["sectionDescription14"],
   frame151: [
     "frame151",
@@ -2464,7 +1691,7 @@ const PlasmicDescendants = {
     "largeTagBase6",
     "frame155",
     "rectangle81",
-    "frame150",
+    "publish",
     "frame156",
     "tag7",
     "largeTagBase7",
@@ -2531,8 +1758,8 @@ const PlasmicDescendants = {
   largeTagBase6: ["largeTagBase6"],
   frame155: ["frame155", "rectangle81"],
   rectangle81: ["rectangle81"],
-  frame150: [
-    "frame150",
+  publish: [
+    "publish",
     "frame156",
     "tag7",
     "largeTagBase7",
@@ -2558,47 +1785,51 @@ const PlasmicDescendants = {
   largeTagBase9: ["largeTagBase9"],
   frame157: ["frame157", "rectangle82"],
   rectangle82: ["rectangle82"],
-  frame210: ["frame210", "infographic"],
   infographic: ["infographic"],
-  frame99: ["frame99", "frame97", "sectionTitle4", "sectionDescription15"],
+  collaboration: [
+    "collaboration",
+    "frame97",
+    "sectionTitle4",
+    "sectionDescription15"
+  ],
   frame97: ["frame97", "sectionTitle4", "sectionDescription15"],
   sectionTitle4: ["sectionTitle4"],
   sectionDescription15: ["sectionDescription15"],
-  frame128: [
-    "frame128",
+  learnWeb4: [
+    "learnWeb4",
     "image52",
-    "frame129",
+    "learnWeb30",
     "sectionTitle5",
     "sectionDescription16"
   ],
   image52: ["image52"],
-  frame129: ["frame129", "sectionTitle5", "sectionDescription16"],
+  learnWeb30: ["learnWeb30", "sectionTitle5", "sectionDescription16"],
   sectionTitle5: ["sectionTitle5"],
   sectionDescription16: ["sectionDescription16"],
-  frame125: [
-    "frame125",
+  learnWeb5: [
+    "learnWeb5",
+    "image22",
     "featureInfo",
     "sectionTitle6",
-    "sectionDescription17",
-    "image22"
+    "sectionDescription17"
   ],
+  image22: ["image22"],
   featureInfo: ["featureInfo", "sectionTitle6", "sectionDescription17"],
   sectionTitle6: ["sectionTitle6"],
   sectionDescription17: ["sectionDescription17"],
-  image22: ["image22"],
-  frame130: [
-    "frame130",
-    "image51",
+  learnWeb6: [
+    "learnWeb6",
+    "image53",
     "frame131",
     "sectionTitle7",
     "sectionDescription18"
   ],
-  image51: ["image51"],
+  image53: ["image53"],
   frame131: ["frame131", "sectionTitle7", "sectionDescription18"],
   sectionTitle7: ["sectionTitle7"],
   sectionDescription18: ["sectionDescription18"],
-  frame132: [
-    "frame132",
+  footer: [
+    "footer",
     "frame145",
     "sectionTitle8",
     "semantuIcon",
@@ -2619,89 +1850,41 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   home: "div";
-  frame141: "div";
+  hero: "div";
   frame140: "div";
   frame96: "div";
   heading: "div";
   title: "div";
-  description: "div";
+  description2: "div";
   frame179: "div";
-  frame138: "div";
+  lincd: "div";
   frame137: "div";
   lincdCodeExample: "div";
-  sectionTitle: "div";
-  frame127: "div";
+  sectionTitle3: "div";
+  span: "span";
+  theLibrary: "div";
   frame126: "div";
   frame169: "div";
   sectionTitle2: "div";
   rectangle79: "div";
   sectionDescription2: "div";
-  group151: "div";
-  frame178: "div";
-  frame180: "div";
-  frame166: "div";
-  _: "div";
-  _2: "div";
-  frame177: "div";
-  frame167: "div";
-  sectionDescription3: "div";
-  frame176: "div";
-  frame173: "div";
-  sectionDescription4: "div";
-  frame181: "div";
-  frame182: "div";
-  frame168: "div";
-  _3: "div";
-  _4: "div";
-  frame183: "div";
   frame170: "div";
   sectionDescription5: "div";
-  frame184: "div";
-  frame174: "div";
   sectionDescription6: "div";
-  frame185: "div";
-  frame186: "div";
   frame171: "div";
-  _5: "div";
-  _6: "div";
-  frame187: "div";
+  sectionDescription3: "div";
+  sectionDescription4: "div";
   frame172: "div";
   sectionDescription7: "div";
-  frame188: "div";
-  frame175: "div";
   sectionDescription8: "div";
-  frame189: "div";
-  frame190: "div";
-  frame191: "div";
-  _7: "div";
-  _8: "div";
-  frame192: "div";
-  frame193: "div";
+  frame173: "div";
   sectionDescription9: "div";
-  frame194: "div";
-  frame195: "div";
   sectionDescription10: "div";
-  frame196: "div";
-  frame197: "div";
-  frame198: "div";
-  _9: "div";
-  _10: "div";
-  frame199: "div";
-  frame200: "div";
+  frame174: "div";
   sectionDescription11: "div";
-  frame201: "div";
-  frame202: "div";
   sectionDescription12: "div";
-  frame203: "div";
-  frame204: "div";
-  frame205: "div";
-  _11: "div";
-  _12: "div";
-  frame206: "div";
-  frame207: "div";
+  frame175: "div";
   sectionDescription13: "div";
-  frame208: "div";
-  frame209: "div";
   sectionDescription14: "div";
   frame151: "div";
   frame153: "div";
@@ -2726,7 +1909,7 @@ type NodeDefaultElementType = {
   largeTagBase6: "div";
   frame155: "div";
   rectangle81: "div";
-  frame150: "div";
+  publish: "div";
   frame156: "div";
   tag7: "div";
   largeTagBase7: "div";
@@ -2736,28 +1919,27 @@ type NodeDefaultElementType = {
   largeTagBase9: "div";
   frame157: "div";
   rectangle82: "div";
-  frame210: "div";
   infographic: "div";
-  frame99: "div";
+  collaboration: "div";
   frame97: "div";
   sectionTitle4: "div";
   sectionDescription15: "div";
-  frame128: "div";
+  learnWeb4: "div";
   image52: "div";
-  frame129: "div";
-  sectionTitle5: "div";
+  learnWeb30: "div";
+  sectionTitle5: "h2";
   sectionDescription16: "div";
-  frame125: "div";
-  featureInfo: "div";
-  sectionTitle6: "div";
-  sectionDescription17: "div";
+  learnWeb5: "div";
   image22: "div";
-  frame130: "div";
-  image51: "div";
+  featureInfo: "div";
+  sectionTitle6: "h2";
+  sectionDescription17: "div";
+  learnWeb6: "div";
+  image53: "div";
   frame131: "div";
   sectionTitle7: "div";
   sectionDescription18: "div";
-  frame132: "div";
+  footer: "div";
   frame145: "div";
   sectionTitle8: "div";
   semantuIcon: "div";
@@ -2824,89 +2006,41 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     home: makeNodeComponent("home"),
-    frame141: makeNodeComponent("frame141"),
+    hero: makeNodeComponent("hero"),
     frame140: makeNodeComponent("frame140"),
     frame96: makeNodeComponent("frame96"),
     heading: makeNodeComponent("heading"),
     title: makeNodeComponent("title"),
-    description: makeNodeComponent("description"),
+    description2: makeNodeComponent("description2"),
     frame179: makeNodeComponent("frame179"),
-    frame138: makeNodeComponent("frame138"),
+    lincd: makeNodeComponent("lincd"),
     frame137: makeNodeComponent("frame137"),
     lincdCodeExample: makeNodeComponent("lincdCodeExample"),
-    sectionTitle: makeNodeComponent("sectionTitle"),
-    frame127: makeNodeComponent("frame127"),
+    sectionTitle3: makeNodeComponent("sectionTitle3"),
+    span: makeNodeComponent("span"),
+    theLibrary: makeNodeComponent("theLibrary"),
     frame126: makeNodeComponent("frame126"),
     frame169: makeNodeComponent("frame169"),
     sectionTitle2: makeNodeComponent("sectionTitle2"),
     rectangle79: makeNodeComponent("rectangle79"),
     sectionDescription2: makeNodeComponent("sectionDescription2"),
-    group151: makeNodeComponent("group151"),
-    frame178: makeNodeComponent("frame178"),
-    frame180: makeNodeComponent("frame180"),
-    frame166: makeNodeComponent("frame166"),
-    _: makeNodeComponent("_"),
-    _2: makeNodeComponent("_2"),
-    frame177: makeNodeComponent("frame177"),
-    frame167: makeNodeComponent("frame167"),
-    sectionDescription3: makeNodeComponent("sectionDescription3"),
-    frame176: makeNodeComponent("frame176"),
-    frame173: makeNodeComponent("frame173"),
-    sectionDescription4: makeNodeComponent("sectionDescription4"),
-    frame181: makeNodeComponent("frame181"),
-    frame182: makeNodeComponent("frame182"),
-    frame168: makeNodeComponent("frame168"),
-    _3: makeNodeComponent("_3"),
-    _4: makeNodeComponent("_4"),
-    frame183: makeNodeComponent("frame183"),
     frame170: makeNodeComponent("frame170"),
     sectionDescription5: makeNodeComponent("sectionDescription5"),
-    frame184: makeNodeComponent("frame184"),
-    frame174: makeNodeComponent("frame174"),
     sectionDescription6: makeNodeComponent("sectionDescription6"),
-    frame185: makeNodeComponent("frame185"),
-    frame186: makeNodeComponent("frame186"),
     frame171: makeNodeComponent("frame171"),
-    _5: makeNodeComponent("_5"),
-    _6: makeNodeComponent("_6"),
-    frame187: makeNodeComponent("frame187"),
+    sectionDescription3: makeNodeComponent("sectionDescription3"),
+    sectionDescription4: makeNodeComponent("sectionDescription4"),
     frame172: makeNodeComponent("frame172"),
     sectionDescription7: makeNodeComponent("sectionDescription7"),
-    frame188: makeNodeComponent("frame188"),
-    frame175: makeNodeComponent("frame175"),
     sectionDescription8: makeNodeComponent("sectionDescription8"),
-    frame189: makeNodeComponent("frame189"),
-    frame190: makeNodeComponent("frame190"),
-    frame191: makeNodeComponent("frame191"),
-    _7: makeNodeComponent("_7"),
-    _8: makeNodeComponent("_8"),
-    frame192: makeNodeComponent("frame192"),
-    frame193: makeNodeComponent("frame193"),
+    frame173: makeNodeComponent("frame173"),
     sectionDescription9: makeNodeComponent("sectionDescription9"),
-    frame194: makeNodeComponent("frame194"),
-    frame195: makeNodeComponent("frame195"),
     sectionDescription10: makeNodeComponent("sectionDescription10"),
-    frame196: makeNodeComponent("frame196"),
-    frame197: makeNodeComponent("frame197"),
-    frame198: makeNodeComponent("frame198"),
-    _9: makeNodeComponent("_9"),
-    _10: makeNodeComponent("_10"),
-    frame199: makeNodeComponent("frame199"),
-    frame200: makeNodeComponent("frame200"),
+    frame174: makeNodeComponent("frame174"),
     sectionDescription11: makeNodeComponent("sectionDescription11"),
-    frame201: makeNodeComponent("frame201"),
-    frame202: makeNodeComponent("frame202"),
     sectionDescription12: makeNodeComponent("sectionDescription12"),
-    frame203: makeNodeComponent("frame203"),
-    frame204: makeNodeComponent("frame204"),
-    frame205: makeNodeComponent("frame205"),
-    _11: makeNodeComponent("_11"),
-    _12: makeNodeComponent("_12"),
-    frame206: makeNodeComponent("frame206"),
-    frame207: makeNodeComponent("frame207"),
+    frame175: makeNodeComponent("frame175"),
     sectionDescription13: makeNodeComponent("sectionDescription13"),
-    frame208: makeNodeComponent("frame208"),
-    frame209: makeNodeComponent("frame209"),
     sectionDescription14: makeNodeComponent("sectionDescription14"),
     frame151: makeNodeComponent("frame151"),
     frame153: makeNodeComponent("frame153"),
@@ -2931,7 +2065,7 @@ export const PlasmicHomepage = Object.assign(
     largeTagBase6: makeNodeComponent("largeTagBase6"),
     frame155: makeNodeComponent("frame155"),
     rectangle81: makeNodeComponent("rectangle81"),
-    frame150: makeNodeComponent("frame150"),
+    publish: makeNodeComponent("publish"),
     frame156: makeNodeComponent("frame156"),
     tag7: makeNodeComponent("tag7"),
     largeTagBase7: makeNodeComponent("largeTagBase7"),
@@ -2941,28 +2075,27 @@ export const PlasmicHomepage = Object.assign(
     largeTagBase9: makeNodeComponent("largeTagBase9"),
     frame157: makeNodeComponent("frame157"),
     rectangle82: makeNodeComponent("rectangle82"),
-    frame210: makeNodeComponent("frame210"),
     infographic: makeNodeComponent("infographic"),
-    frame99: makeNodeComponent("frame99"),
+    collaboration: makeNodeComponent("collaboration"),
     frame97: makeNodeComponent("frame97"),
     sectionTitle4: makeNodeComponent("sectionTitle4"),
     sectionDescription15: makeNodeComponent("sectionDescription15"),
-    frame128: makeNodeComponent("frame128"),
+    learnWeb4: makeNodeComponent("learnWeb4"),
     image52: makeNodeComponent("image52"),
-    frame129: makeNodeComponent("frame129"),
+    learnWeb30: makeNodeComponent("learnWeb30"),
     sectionTitle5: makeNodeComponent("sectionTitle5"),
     sectionDescription16: makeNodeComponent("sectionDescription16"),
-    frame125: makeNodeComponent("frame125"),
+    learnWeb5: makeNodeComponent("learnWeb5"),
+    image22: makeNodeComponent("image22"),
     featureInfo: makeNodeComponent("featureInfo"),
     sectionTitle6: makeNodeComponent("sectionTitle6"),
     sectionDescription17: makeNodeComponent("sectionDescription17"),
-    image22: makeNodeComponent("image22"),
-    frame130: makeNodeComponent("frame130"),
-    image51: makeNodeComponent("image51"),
+    learnWeb6: makeNodeComponent("learnWeb6"),
+    image53: makeNodeComponent("image53"),
     frame131: makeNodeComponent("frame131"),
     sectionTitle7: makeNodeComponent("sectionTitle7"),
     sectionDescription18: makeNodeComponent("sectionDescription18"),
-    frame132: makeNodeComponent("frame132"),
+    footer: makeNodeComponent("footer"),
     frame145: makeNodeComponent("frame145"),
     sectionTitle8: makeNodeComponent("sectionTitle8"),
     semantuIcon: makeNodeComponent("semantuIcon"),

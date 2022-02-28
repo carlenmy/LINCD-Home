@@ -13,6 +13,7 @@
 import * as React from "react";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import * as pp from "@plasmicapp/react-web";
 import {
   hasVariant,
@@ -167,6 +168,7 @@ function PlasmicButton__RenderFunc(props: {
         projectcss.button,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
+        projectcss.plasmic_tokens,
         sty.root,
         {
           [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,

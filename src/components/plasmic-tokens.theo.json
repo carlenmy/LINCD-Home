@@ -1,5 +1,36 @@
 {
-  "props": [],
+  "props": [
+    {
+      "name": "Dark blue",
+      "type": "color",
+      "value": "#242935",
+      "category": "color",
+      "meta": {
+        "projectId": "vxhLNdYPiZkVHCUwHukgLS",
+        "id": "uuvDmd-eW"
+      }
+    },
+    {
+      "name": "Text body",
+      "type": "color",
+      "value": "#F4F4F4",
+      "category": "color",
+      "meta": {
+        "projectId": "vxhLNdYPiZkVHCUwHukgLS",
+        "id": "QId49VIrN"
+      }
+    },
+    {
+      "name": "White",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "vxhLNdYPiZkVHCUwHukgLS",
+        "id": "fyWqoulwY"
+      }
+    }
+  ],
   "global": {
     "meta": {
       "source": "plasmic.app"

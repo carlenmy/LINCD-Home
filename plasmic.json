@@ -141,6 +141,31 @@
           "id": "4kljAfTdZ",
           "name": "linked-code.png",
           "filePath": "plasmic/lincd_home/images/linkedCodepng.png"
+        },
+        {
+          "id": "X27ieKJgi",
+          "name": "LINCD cover logo.png",
+          "filePath": "plasmic/lincd_home/images/lincdCoverLogopng.png"
+        },
+        {
+          "id": "2gCjzanzn",
+          "name": "Tech stack.png",
+          "filePath": "plasmic/lincd_home/images/techStackpng.png"
+        },
+        {
+          "id": "YMOv8ymxv",
+          "name": "image",
+          "filePath": "plasmic/lincd_home/images/image.png"
+        },
+        {
+          "id": "Bu8TJwgt3",
+          "name": "image 2",
+          "filePath": "plasmic/lincd_home/images/image2.png"
+        },
+        {
+          "id": "sm5AcFFke",
+          "name": "Tech stack.png 2",
+          "filePath": "plasmic/lincd_home/images/techStackpng2.png"
         }
       ],
       "indirect": false,

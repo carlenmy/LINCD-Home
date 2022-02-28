@@ -13,6 +13,7 @@
 import * as React from "react";
 
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 
 import {
   hasVariant,
@@ -76,6 +77,7 @@ function PlasmicCtaButtonHomePage__RenderFunc(props: {
         projectcss.button,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
+        projectcss.plasmic_tokens,
         sty.root
       )}
       onClick={"requestAccess()" as const}
