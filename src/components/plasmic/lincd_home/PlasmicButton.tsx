@@ -168,6 +168,7 @@ function PlasmicButton__RenderFunc(props: {
         projectcss.button,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         sty.root,
         {
@@ -198,41 +199,41 @@ function PlasmicButton__RenderFunc(props: {
             "isDisabled"
           ),
           [sty.rootshape_round]: hasVariant(variants, "shape", "round"),
-          [sty.rootshape_round_size_compact]:
-            hasVariant(variants, "shape", "round") &&
-            hasVariant(variants, "size", "compact"),
           [sty.rootshape_rounded]: hasVariant(variants, "shape", "rounded"),
+          [sty.rootshape_rounded_showEndIcon]:
+            hasVariant(variants, "showEndIcon", "showEndIcon") &&
+            hasVariant(variants, "shape", "rounded"),
           [sty.rootshape_rounded_showStartIcon]:
             hasVariant(variants, "shape", "rounded") &&
             hasVariant(variants, "showStartIcon", "showStartIcon"),
+          [sty.rootshape_rounded_size_compact]:
+            hasVariant(variants, "size", "compact") &&
+            hasVariant(variants, "shape", "rounded"),
           [sty.rootshape_sharp]: hasVariant(variants, "shape", "sharp"),
           [sty.rootshowEndIcon]: hasVariant(
             variants,
             "showEndIcon",
             "showEndIcon"
           ),
-          [sty.rootshowEndIcon_shape_rounded]:
-            hasVariant(variants, "showEndIcon", "showEndIcon") &&
-            hasVariant(variants, "shape", "rounded"),
+          [sty.rootshowEndIcon_size_compact]:
+            hasVariant(variants, "size", "compact") &&
+            hasVariant(variants, "showEndIcon", "showEndIcon"),
           [sty.rootshowStartIcon]: hasVariant(
             variants,
             "showStartIcon",
             "showStartIcon"
           ),
-          [sty.rootsize_compact]: hasVariant(variants, "size", "compact"),
-          [sty.rootsize_compact_shape_rounded]:
-            hasVariant(variants, "size", "compact") &&
-            hasVariant(variants, "shape", "rounded"),
-          [sty.rootsize_compact_showEndIcon]:
-            hasVariant(variants, "size", "compact") &&
-            hasVariant(variants, "showEndIcon", "showEndIcon"),
-          [sty.rootsize_compact_showStartIcon]:
-            hasVariant(variants, "size", "compact") &&
-            hasVariant(variants, "showStartIcon", "showStartIcon"),
-          [sty.rootsize_compact_showStartIcon_showEndIcon]:
+          [sty.rootshowStartIcon_showEndIcon_size_compact]:
             hasVariant(variants, "size", "compact") &&
             hasVariant(variants, "showStartIcon", "showStartIcon") &&
             hasVariant(variants, "showEndIcon", "showEndIcon"),
+          [sty.rootshowStartIcon_size_compact]:
+            hasVariant(variants, "size", "compact") &&
+            hasVariant(variants, "showStartIcon", "showStartIcon"),
+          [sty.rootsize_compact]: hasVariant(variants, "size", "compact"),
+          [sty.rootsize_compact_shape_round]:
+            hasVariant(variants, "shape", "round") &&
+            hasVariant(variants, "size", "compact"),
           [sty.rootsize_minimal]: hasVariant(variants, "size", "minimal")
         }
       )}

@@ -40,6 +40,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_lincd_home.module.css"; // plasmic-import: vxhLNdYPiZkVHCUwHukgLS/projectcss
 import sty from "./PlasmicHomepage.module.css"; // plasmic-import: HEzhWpoasdTp/css
 
+import discordLogoFDt5FOWtj from "./images/discordLogo.png"; // plasmic-import: fDT5fOWtj/picture
+
 export type PlasmicHomepage__VariantMembers = {};
 
 export type PlasmicHomepage__VariantsArgs = {};
@@ -51,7 +53,7 @@ type ArgPropType = keyof PlasmicHomepage__ArgsType;
 export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
-  root?: p.Flex<"div">;
+  lincdLandingPage?: p.Flex<"div">;
   home?: p.Flex<"div">;
   hero?: p.Flex<"div">;
   frame140?: p.Flex<"div">;
@@ -148,7 +150,7 @@ export type PlasmicHomepage__OverridesType = {
   semantuIcon?: p.Flex<"div">;
   sectionTitle10?: p.Flex<"div">;
   sectionDescription19?: p.Flex<"div">;
-  link?: p.Flex<"a">;
+  img?: p.Flex<typeof p.PlasmicImg>;
 };
 
 export interface DefaultHomepageProps {
@@ -176,8 +178,8 @@ function PlasmicHomepage__RenderFunc(props: {
       <div className={projectcss.plasmic_page_wrapper}>
         <p.Stack
           as={"div"}
-          data-plasmic-name={"root"}
-          data-plasmic-override={overrides.root}
+          data-plasmic-name={"lincdLandingPage"}
+          data-plasmic-override={overrides.lincdLandingPage}
           data-plasmic-root={true}
           data-plasmic-for-node={forNode}
           hasGap={true}
@@ -185,8 +187,9 @@ function PlasmicHomepage__RenderFunc(props: {
             projectcss.all,
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
-            sty.root
+            sty.lincdLandingPage
           )}
         >
           <div
@@ -1282,14 +1285,12 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   </React.Fragment>
                   <a
-                    data-plasmic-name={"link"}
-                    data-plasmic-override={overrides.link}
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
                       projectcss.plasmic_default__inline,
-                      sty.link
+                      sty.link__w7Gyv
                     )}
                     href={"https://www.semantu.com/demos" as const}
                   >
@@ -1297,6 +1298,39 @@ function PlasmicHomepage__RenderFunc(props: {
                   </a>
                   <React.Fragment>{""}</React.Fragment>
                 </React.Fragment>
+              </div>
+
+              <div className={classNames(projectcss.all, sty.freeBox__rpkXx)}>
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__ukl5S
+                  )}
+                  href={"https://discord.gg/2PFnf7udET" as const}
+                  target={"_blank" as const}
+                  title={"Join us on Discord!" as const}
+                >
+                  <p.PlasmicImg
+                    data-plasmic-name={"img"}
+                    data-plasmic-override={overrides.img}
+                    alt={"Discord Icon" as const}
+                    className={classNames(sty.img)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: discordLogoFDt5FOWtj,
+                      fullWidth: 463,
+                      fullHeight: 512,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </a>
               </div>
             </p.Stack>
           </div>
@@ -1307,8 +1341,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
+  lincdLandingPage: [
+    "lincdLandingPage",
     "home",
     "hero",
     "frame140",
@@ -1405,7 +1439,7 @@ const PlasmicDescendants = {
     "semantuIcon",
     "sectionTitle10",
     "sectionDescription19",
-    "link"
+    "img"
   ],
   home: [
     "home",
@@ -1504,7 +1538,7 @@ const PlasmicDescendants = {
     "semantuIcon",
     "sectionTitle10",
     "sectionDescription19",
-    "link"
+    "img"
   ],
   hero: [
     "hero",
@@ -1835,20 +1869,20 @@ const PlasmicDescendants = {
     "semantuIcon",
     "sectionTitle10",
     "sectionDescription19",
-    "link"
+    "img"
   ],
   frame145: ["frame145", "sectionTitle8", "semantuIcon", "sectionTitle10"],
   sectionTitle8: ["sectionTitle8"],
   semantuIcon: ["semantuIcon"],
   sectionTitle10: ["sectionTitle10"],
-  sectionDescription19: ["sectionDescription19", "link"],
-  link: ["link"]
+  sectionDescription19: ["sectionDescription19"],
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  root: "div";
+  lincdLandingPage: "div";
   home: "div";
   hero: "div";
   frame140: "div";
@@ -1945,7 +1979,7 @@ type NodeDefaultElementType = {
   semantuIcon: "div";
   sectionTitle10: "div";
   sectionDescription19: "div";
-  link: "a";
+  img: typeof p.PlasmicImg;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1992,7 +2026,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       forNode: nodeName
     });
   };
-  if (nodeName === "root") {
+  if (nodeName === "lincdLandingPage") {
     func.displayName = "PlasmicHomepage";
   } else {
     func.displayName = `PlasmicHomepage.${nodeName}`;
@@ -2002,7 +2036,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
 
 export const PlasmicHomepage = Object.assign(
   // Top-level PlasmicHomepage renders the root element
-  makeNodeComponent("root"),
+  makeNodeComponent("lincdLandingPage"),
   {
     // Helper components rendering sub-elements
     home: makeNodeComponent("home"),
@@ -2101,7 +2135,7 @@ export const PlasmicHomepage = Object.assign(
     semantuIcon: makeNodeComponent("semantuIcon"),
     sectionTitle10: makeNodeComponent("sectionTitle10"),
     sectionDescription19: makeNodeComponent("sectionDescription19"),
-    link: makeNodeComponent("link"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,

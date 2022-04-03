@@ -91,13 +91,13 @@
 .rootcolor_blue {
   background: #0091ff;
 }
-.rootshape_round_size_compact {
+.rootsize_compact_shape_round {
   padding: 6px;
 }
 .rootshape_rounded_showStartIcon {
   padding-left: 16px;
 }
-.rootshowEndIcon_shape_rounded {
+.rootshape_rounded_showEndIcon {
   padding-right: 16px;
 }
 .root:hover {

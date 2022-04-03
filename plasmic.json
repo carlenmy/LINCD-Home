@@ -166,6 +166,16 @@
           "id": "sm5AcFFke",
           "name": "Tech stack.png 2",
           "filePath": "plasmic/lincd_home/images/techStackpng2.png"
+        },
+        {
+          "id": "2_gESo38j",
+          "name": "LINCDjs cover logo.png",
+          "filePath": "plasmic/lincd_home/images/lincDjsCoverLogopng.png"
+        },
+        {
+          "id": "fDT5fOWtj",
+          "name": "Discord Logo",
+          "filePath": "plasmic/lincd_home/images/discordLogo.png"
         }
       ],
       "indirect": false,
@@ -183,6 +193,7 @@
       }
     ]
   },
-  "cliVersion": "0.1.171",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.171/dist/plasmic.schema.json"
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.176",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.176/dist/plasmic.schema.json"
 }
